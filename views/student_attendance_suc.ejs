@@ -1,41 +1,62 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
-        <link href="../CSS/StyleSheet2.css" rel="stylesheet" />
-        <title>Document</title>
-    </head>
-    <body>
-        <div class="v137_23">
-            <div class="v137_24">
-                <span class="v137_25">
-                    우편번호 : 02844, 서울특별시 성북구 보문로 34다길 2, 수정관 1층 대학일자리센터>인재개발팀<br>
-                    TEL : 02-920-7009, 7993(시스템 관련) / 7838(산학협동 인턴십) / 7986(S+마일리지) / 7141, 7016(비교과 프로그램)<br>
-                    E-MAIL : jobs@sungshin.ac.kr(기업용), hrd@sungshin.ac.kr(학생전용)  FAX : 02-920-7116<br>
-                    COPYRIGHT©2019 SUNGSHIN WOMEN'S UNIVERSITY. ALL RIGHTS RESERVED.
-                </span>
-                <div class="v40_327"></div>
-            </div>
-            <div class="v137_27">
-                <div class="v137_28">
-                    <div class="v137_29">
-                        <span class="v137_40">출석이 완료되었습니다.</span>
-                    </div>
-                    <div class="v137_31"></div>
-                    <span class="v137_32">강의 제목</span>
-                </div>
-                <div class="v137_33">
-                    <select name="v40_341" id="v40_341" style="height:50px; width:900px; font-size:30px">
-                        <option value="1">강의제목 1</option>      <!--일단 예시 확인용으로 넣은 값입니다-->
-                        <option value="2">강의제목 2</option>
-                        <option value="3">강의제목 3</option>
-                    </select>
-                </div>
-            </div>
-            <div class="v137_37">
-                <span class="v40_343">sunshine 특강 출결 사이트</span>
-                <div class="v40_344"></div>
-            </div>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../CSS/StyleSheet2.css" rel="stylesheet" />
+    <script src="../SCRIPT/back_script.js" type="text/javascript"></script>
+    <title>Document</title>
+  </head>
+    <body
+    onload="noBack();"
+    onpageshow="if(event.persisted) noBack();"
+    onunload=""
+  >
+    <div class="v137_23">
+      <div class="v137_24">
+        <span class="v137_25">
+          우편번호 : 02844, 서울특별시 성북구 보문로 34다길 2, 수정관 1층
+          대학일자리센터>인재개발팀<br />
+          TEL : 02-920-7009, 7993(시스템 관련) / 7838(산학협동 인턴십) /
+          7986(S+마일리지) / 7141, 7016(비교과 프로그램)<br />
+          E-MAIL : jobs@sungshin.ac.kr(기업용), hrd@sungshin.ac.kr(학생전용) FAX
+          : 02-920-7116<br />
+          COPYRIGHT©2019 SUNGSHIN WOMEN'S UNIVERSITY. ALL RIGHTS RESERVED.
+        </span>
+        <div class="v40_327"></div>
+      </div>
+      <div class="v137_27">
+        <div class="v137_28">
+          <div class="v137_29">
+            <span class="v137_40">출석이 완료되었습니다.</span>
+          </div>
+          <div class="v137_31"></div>
+          <span class="v137_32">강의 제목</span>
         </div>
-    </body>
+        <div class="v137_33">
+          <select
+            name="v40_341"
+            id="v40_341"
+            style="height: 50px; width: 900px; font-size: 30px"
+          >
+            <option value="1">강의제목 1</option>
+            <!--일단 예시 확인용으로 넣은 값입니다-->
+            <option value="2">강의제목 2</option>
+            <option value="3">강의제목 3</option>
+          </select>
+        </div>
+      </div>
+      <div class="v137_37">
+        <span class="v40_343">sunshine 특강 출결 사이트</span>
+        <a href="../HTML/student_main.html"><div class="v40_344"></div></a>
+        <form method="get" action="/logout">
+          <div class="logout">
+            <input type="submit" value="로그아웃" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>

@@ -3,16 +3,15 @@
 }
 body {
   font-size: 14px;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
-
 
 .header {
   width: 100%;
   height: 283px;
   min-height: 250px;
-  background: rgba(103,92,148,1);
+  background: rgba(103, 92, 148, 1);
   opacity: 1;
   position: absolute;
   overflow: hidden;
@@ -23,7 +22,7 @@ body {
 .v41_73 {
   width: 100%;
   height: 1024px;
-  background: rgba(255,255,255,1);
+  background: rgba(255, 255, 255, 1);
   opacity: 1;
   position: absolute;
   top: 0px;
@@ -34,7 +33,7 @@ body {
 .v41_229 {
   width: 402px;
   height: 567px;
-  background: rgba(219,218,242,1);
+  background: rgba(219, 218, 242, 1);
   opacity: 1;
   position: absolute;
   top: 283px;
@@ -44,7 +43,7 @@ body {
 .v41_230 {
   width: 321px;
   height: 303px;
-  background: rgba(103,92,148,1);
+  background: rgba(103, 92, 148, 1);
   opacity: 1;
   position: absolute;
   top: 197px;
@@ -58,11 +57,11 @@ body {
   position: absolute;
   top: 156px;
   left: 22px;
-  border: 1px solid rgba(255,255,255,1);
+  border: 1px solid rgba(255, 255, 255, 1);
 }
 .v41_231 {
   width: 274px;
-  color: rgba(255,255,255,1);
+  color: rgba(255, 255, 255, 1);
   position: absolute;
   top: 108px;
   left: 24px;
@@ -79,11 +78,11 @@ body {
   position: absolute;
   top: 78px;
   left: 23px;
-  border: 1px solid rgba(255,255,255,1);
+  border: 1px solid rgba(255, 255, 255, 1);
 }
 .v41_233 {
   width: 274px;
-  color: rgba(255,255,255,1);
+  color: rgba(255, 255, 255, 1);
   position: absolute;
   top: 30px;
   left: 24px;
@@ -95,7 +94,7 @@ body {
 }
 .v40_430 {
   min-width: 600px;
-  color: rgba(255,255,255,1);
+  color: rgba(255, 255, 255, 1);
   position: absolute;
   top: 122px;
   left: 450px;
@@ -134,7 +133,7 @@ body {
 .v41_237 {
   width: 321px;
   height: 118px;
-  background: rgba(103,92,148,1);
+  background: rgba(103, 92, 148, 1);
   opacity: 1;
   position: absolute;
   top: 0px;
@@ -143,7 +142,7 @@ body {
 }
 .v41_238 {
   width: 281px;
-  color: rgba(255,255,255,1);
+  color: rgba(255, 255, 255, 1);
   position: absolute;
   top: 58px;
   left: 37px;
@@ -155,7 +154,7 @@ body {
 }
 .v41_239 {
   width: 281px;
-  color: rgba(255,255,255,1);
+  color: rgba(255, 255, 255, 1);
   position: absolute;
   top: 17px;
   left: 37px;
@@ -169,7 +168,7 @@ body {
 .v40_411 {
   width: 100%;
   height: 1024px;
-  background: rgba(255,255,255,1);
+  background: rgba(255, 255, 255, 1);
   opacity: 1;
   position: absolute;
   top: 0px;
@@ -188,7 +187,7 @@ body {
   overflow: hidden; */
   width: 100%;
   height: 174px;
-  background: rgba(197,197,197,1);
+  background: rgba(197, 197, 197, 1);
   opacity: 1;
   position: absolute;
   top: 850px;
@@ -197,7 +196,7 @@ body {
 
 .v40_413 {
   width: 100%;
-  color: rgba(0,0,0,1);
+  color: rgba(0, 0, 0, 1);
   position: absolute;
   top: 44px;
   left: 237px;
@@ -235,7 +234,7 @@ body {
 .v40_447 {
   width: 907px;
   height: 100px;
-  background: rgba(196,196,196,1);
+  background: rgba(196, 196, 196, 1);
   opacity: 1;
   position: absolute;
   top: 319px;
@@ -245,7 +244,7 @@ body {
 .v40_446 {
   width: 907px;
   height: 100px;
-  background: rgba(196,196,196,1);
+  background: rgba(196, 196, 196, 1);
   opacity: 1;
   position: absolute;
   top: 184px;
@@ -255,7 +254,7 @@ body {
 .v40_445 {
   width: 907px;
   height: 100px;
-  background: rgba(235,235,235,1);
+  background: rgba(235, 235, 235, 1);
   opacity: 1;
   position: absolute;
   top: 49px;
@@ -266,7 +265,7 @@ body {
 }
 .v40_455 {
   width: 144px;
-  color: rgba(0,0,0,1);
+  color: rgba(0, 0, 0, 1);
   position: absolute;
   top: 35px;
   left: 728px;
@@ -281,7 +280,7 @@ body {
 }
 .v40_448 {
   width: 555px;
-  color: rgba(0,0,0,1);
+  color: rgba(0, 0, 0, 1);
   position: absolute;
   top: 35px;
   left: 183px;
@@ -296,7 +295,7 @@ body {
 }
 .v40_452 {
   width: 67px;
-  color: rgba(0,0,0,1);
+  color: rgba(0, 0, 0, 1);
   position: absolute;
   top: 35px;
   left: 146px;
@@ -311,7 +310,7 @@ body {
 }
 .v40_453 {
   width: 141px;
-  color: rgba(0,0,0,1);
+  color: rgba(0, 0, 0, 1);
   position: absolute;
   top: 22px;
   left: 15px;
@@ -337,7 +336,7 @@ body {
 .v40_425 {
   width: 402px;
   height: 567px;
-  background: rgba(219,218,242,1);
+  background: rgba(219, 218, 242, 1);
   opacity: 1;
   position: absolute;
   top: 283px;
@@ -347,7 +346,7 @@ body {
 .v40_432 {
   width: 321px;
   height: 303px;
-  background: rgba(103,92,148,1);
+  background: rgba(103, 92, 148, 1);
   opacity: 1;
   position: absolute;
   top: 197px;
@@ -361,13 +360,13 @@ body {
   position: absolute;
   top: 156px;
   left: 22px;
-  border: 1px solid rgba(255,255,255,1);
+  border: 1px solid rgba(255, 255, 255, 1);
 }
 .v40_444 {
   width: 276px;
-  color: rgba(255,255,255,1);
+  color: rgba(255, 255, 255, 1);
   position: absolute;
-  top: 93px; 
+  top: 93px;
   left: 22px;
   font-family: NanumSquare;
   font-weight: ExtraBold;
@@ -382,11 +381,11 @@ body {
   position: absolute;
   top: 78px;
   left: 23px;
-  border: 1px solid rgba(255,255,255,1);
+  border: 1px solid rgba(255, 255, 255, 1);
 }
 .v40_443 {
   width: 276px;
-  color: rgba(255,255,255,1);
+  color: rgba(255, 255, 255, 1);
   position: absolute;
   top: 15px;
   left: 22px;
@@ -412,7 +411,7 @@ body {
 .v40_426 {
   width: 321px;
   height: 118px;
-  background: rgba(103,92,148,1);
+  background: rgba(103, 92, 148, 1);
   opacity: 1;
   position: absolute;
   top: 0px;
@@ -421,7 +420,7 @@ body {
 }
 .v40_427 {
   width: 281px;
-  color: rgba(255,255,255,1);
+  color: rgba(255, 255, 255, 1);
   position: absolute;
   top: 58px;
   left: 37px;
@@ -433,7 +432,7 @@ body {
 }
 .v40_428 {
   width: 281px;
-  color: rgba(255,255,255,1);
+  color: rgba(255, 255, 255, 1);
   position: absolute;
   top: 17px;
   left: 37px;
@@ -451,7 +450,7 @@ table.student_list {
 }
 
 table.student_list thead {
-  color: rgba(0,0,0,1);
+  color: rgba(0, 0, 0, 1);
   font-family: NanumSquare;
   font-weight: Bold;
   font-size: 24px;
@@ -461,7 +460,7 @@ table.student_list thead {
 }
 
 table.student_list tbody {
-  color: rgba(0,0,0,1);
+  color: rgba(0, 0, 0, 1);
   font-family: NanumSquare;
   font-weight: Regular;
   font-size: 24px;
@@ -480,7 +479,7 @@ table.lecture_list {
 }
 
 table.lecture_list thead {
-  color: rgba(0,0,0,1);
+  color: rgba(0, 0, 0, 1);
   font-family: NanumSquare;
   font-weight: Bold;
   font-size: 24px;
@@ -490,7 +489,7 @@ table.lecture_list thead {
 }
 
 table.lecture_list tbody {
-  color: rgba(0,0,0,1);
+  color: rgba(0, 0, 0, 1);
   font-family: NanumSquare;
   font-weight: Regular;
   font-size: 26px;
@@ -499,7 +498,6 @@ table.lecture_list tbody {
   text-align: center;
   padding: 3px;
 }
-
 
 /* 
 .v41_229 {
@@ -516,7 +514,7 @@ table.lecture_list tbody {
 .v41_230 {
   width: 321px;
   height: 303px;
-  background: rgba(103,92,148,1);
+  background: rgba(103, 92, 148, 1);
   opacity: 1;
   position: absolute;
   top: 190px;
@@ -530,11 +528,11 @@ table.lecture_list tbody {
   position: absolute;
   top: 150px;
   left: 22px;
-  border: 1px solid rgba(255,255,255,1);
+  border: 1px solid rgba(255, 255, 255, 1);
 }
 .v41_231 {
   width: 274px;
-  color: rgba(255,255,255,1);
+  color: rgba(255, 255, 255, 1);
   position: absolute;
   top: 108px;
   left: 24px;
@@ -551,11 +549,11 @@ table.lecture_list tbody {
   position: absolute;
   top: 78px;
   left: 23px;
-  border: 1px solid rgba(255,255,255,1);
+  border: 1px solid rgba(255, 255, 255, 1);
 }
 .v41_233 {
   width: 274px;
-  color: rgba(255,255,255,1);
+  color: rgba(255, 255, 255, 1);
   position: absolute;
   top: 30px;
   left: 24px;
@@ -581,7 +579,7 @@ table.lecture_list tbody {
 .v41_237 {
   width: 321px;
   height: 118px;
-  background: rgba(103,92,148,1);
+  background: rgba(103, 92, 148, 1);
   opacity: 1;
   position: absolute;
   top: 0px;
@@ -590,7 +588,7 @@ table.lecture_list tbody {
 }
 .v41_238 {
   width: 281px;
-  color: rgba(255,255,255,1);
+  color: rgba(255, 255, 255, 1);
   position: absolute;
   top: 58px;
   left: 37px;
@@ -602,7 +600,7 @@ table.lecture_list tbody {
 }
 .v41_239 {
   width: 281px;
-  color: rgba(255,255,255,1);
+  color: rgba(255, 255, 255, 1);
   position: absolute;
   top: 17px;
   left: 37px;
@@ -631,7 +629,7 @@ table.lecture_list tbody {
 .v52_351 {
   width: 929px;
   height: 430px;
-  background: rgba(235,235,235,1);
+  background: rgba(235, 235, 235, 1);
   opacity: 1;
   position: absolute;
   top: 80px;
@@ -645,7 +643,7 @@ table.lecture_list tbody {
   position: absolute;
   top: 219px;
   left: 19px;
-  border: 1px solid rgba(11,11,11,1);
+  border: 1px solid rgba(11, 11, 11, 1);
 }
 .v52_353 {
   width: 892px;
@@ -654,7 +652,7 @@ table.lecture_list tbody {
   position: absolute;
   top: 270px;
   left: 25px;
-  border: 1px solid rgba(11,11,11,1);
+  border: 1px solid rgba(11, 11, 11, 1);
 }
 .v52_354 {
   width: 892px;
@@ -663,7 +661,7 @@ table.lecture_list tbody {
   position: absolute;
   top: 168px;
   left: 21px;
-  border: 1px solid rgba(11,11,11,1);
+  border: 1px solid rgba(11, 11, 11, 1);
 }
 .v52_355 {
   width: 892px;
@@ -672,11 +670,11 @@ table.lecture_list tbody {
   position: absolute;
   top: 117px;
   left: 21px;
-  border: 1px solid rgba(11,11,11,1);
+  border: 1px solid rgba(11, 11, 11, 1);
 }
 .v52_356 {
   width: 285px;
-  color: rgba(0,0,0,1);
+  color: rgba(0, 0, 0, 1);
   position: absolute;
   top: 76px;
   left: 627px;
@@ -688,7 +686,7 @@ table.lecture_list tbody {
 }
 .v52_357 {
   width: 359px;
-  color: rgba(0,0,0,1);
+  color: rgba(0, 0, 0, 1);
   position: absolute;
   top: 76px;
   left: 268px;
@@ -700,7 +698,7 @@ table.lecture_list tbody {
 }
 .v52_358 {
   width: 247px;
-  color: rgba(0,0,0,1);
+  color: rgba(0, 0, 0, 1);
   position: absolute;
   top: 76px;
   left: 21px;
@@ -717,7 +715,7 @@ table.lecture_list tbody {
   position: absolute;
   top: 66px;
   left: 19px;
-  border: 1px solid rgba(11,11,11,1);
+  border: 1px solid rgba(11, 11, 11, 1);
 }
 .v52_360 {
   height: 234px;
@@ -726,7 +724,7 @@ table.lecture_list tbody {
   position: absolute;
   top: 66px;
   left: 268px;
-  border: 1px solid rgba(11,11,11,1);
+  border: 1px solid rgba(11, 11, 11, 1);
 }
 .v52_361 {
   height: 234px;
@@ -735,11 +733,11 @@ table.lecture_list tbody {
   position: absolute;
   top: 66px;
   left: 627px;
-  border: 1px solid rgba(11,11,11,1);
+  border: 1px solid rgba(11, 11, 11, 1);
 }
 .v52_362 {
   width: 132px;
-  color: rgba(0,0,0,1);
+  color: rgba(0, 0, 0, 1);
   position: absolute;
   top: 15px;
   left: 427px;
@@ -756,11 +754,11 @@ table.lecture_list tbody {
   position: absolute;
   top: 14px;
   left: 427px;
-  border: 1px solid rgba(11,11,11,1);
+  border: 1px solid rgba(11, 11, 11, 1);
 }
 .v52_364 {
   width: 276px;
-  color: rgba(0,0,0,1);
+  color: rgba(0, 0, 0, 1);
   position: absolute;
   top: 15px;
   left: 151px;
@@ -777,11 +775,11 @@ table.lecture_list tbody {
   position: absolute;
   top: 14px;
   left: 151px;
-  border: 1px solid rgba(11,11,11,1);
+  border: 1px solid rgba(11, 11, 11, 1);
 }
 .v52_366 {
   width: 132px;
-  color: rgba(0,0,0,1);
+  color: rgba(0, 0, 0, 1);
   position: absolute;
   top: 15px;
   left: 19px;
@@ -794,7 +792,7 @@ table.lecture_list tbody {
 .v40_574 {
   width: 402px;
   height: 567px;
-  background: rgba(219,218,242,1);
+  background: rgba(219, 218, 242, 1);
   opacity: 1;
   position: absolute;
   top: 283px;
@@ -817,7 +815,7 @@ table.lecture_list tbody {
 .v40_581 {
   width: 321px;
   height: 118px;
-  background: rgba(103,92,148,1);
+  background: rgba(103, 92, 148, 1);
   opacity: 1;
   position: absolute;
   top: 0px;
@@ -826,7 +824,7 @@ table.lecture_list tbody {
 }
 .v40_582 {
   width: 281px;
-  color: rgba(255,255,255,1);
+  color: rgba(255, 255, 255, 1);
   position: absolute;
   top: 58px;
   left: 37px;
@@ -838,7 +836,7 @@ table.lecture_list tbody {
 }
 .v40_583 {
   width: 281px;
-  color: rgba(255,255,255,1);
+  color: rgba(255, 255, 255, 1);
   position: absolute;
   top: 17px;
   left: 37px;
@@ -851,7 +849,7 @@ table.lecture_list tbody {
 .v59_52 {
   width: 321px;
   height: 303px;
-  background: rgba(103,92,148,1);
+  background: rgba(103, 92, 148, 1);
   opacity: 1;
   position: absolute;
   top: 197px;
@@ -865,11 +863,11 @@ table.lecture_list tbody {
   position: absolute;
   top: 156px;
   left: 22px;
-  border: 1px solid rgba(255,255,255,1);
+  border: 1px solid rgba(255, 255, 255, 1);
 }
 .v59_54 {
   width: 274px;
-  color: rgba(255,255,255,1);
+  color: rgba(255, 255, 255, 1);
   position: absolute;
   top: 78px;
   left: 24px;
@@ -886,11 +884,11 @@ table.lecture_list tbody {
   position: absolute;
   top: 78px;
   left: 23px;
-  border: 1px solid rgba(255,255,255,1);
+  border: 1px solid rgba(255, 255, 255, 1);
 }
 .v59_56 {
   width: 274px;
-  color: rgba(255,255,255,1);
+  color: rgba(255, 255, 255, 1);
   position: absolute;
   top: 0px;
   left: 24px;
@@ -903,7 +901,7 @@ table.lecture_list tbody {
 .v40_584 {
   width: 100%;
   height: 283px;
-  background: rgba(103,92,148,1);
+  background: rgba(103, 92, 148, 1);
   opacity: 1;
   position: absolute;
   top: 0px;
@@ -912,7 +910,7 @@ table.lecture_list tbody {
 }
 .v40_585 {
   width: 541px;
-  color: rgba(255,255,255,1);
+  color: rgba(255, 255, 255, 1);
   position: absolute;
   top: 122px;
   left: 450px;
@@ -938,7 +936,7 @@ table.lecture_list tbody {
 .v52_245 {
   width: 100%;
   height: 1024px;
-  background: rgba(255,255,255,1);
+  background: rgba(255, 255, 255, 1);
   opacity: 1;
   position: absolute;
   top: 0px;
@@ -948,7 +946,7 @@ table.lecture_list tbody {
 .v52_246 {
   width: 100%;
   height: 174px;
-  background: rgba(197,197,197,1);
+  background: rgba(197, 197, 197, 1);
   opacity: 1;
   position: absolute;
   top: 850px;
@@ -957,7 +955,7 @@ table.lecture_list tbody {
 }
 .v52_247 {
   width: 100%;
-  color: rgba(0,0,0,1);
+  color: rgba(0, 0, 0, 1);
   position: absolute;
   top: 44px;
   left: 237px;
@@ -981,7 +979,6 @@ table.lecture_list tbody {
   overflow: hidden;
 }
 
-
 /* .content{
   padding-left: 400px;
   padding-top: 100px;
@@ -990,7 +987,7 @@ table.lecture_list tbody {
 .v52_291 {
   width: 929px;
   height: 66px;
-  background: rgba(235,235,235,1);
+  background: rgba(235, 235, 235, 1);
   opacity: 1;
   position: absolute;
   top: 333px;
@@ -1000,7 +997,7 @@ table.lecture_list tbody {
 
 .v52_302 {
   width: 132px;
-  color: rgba(0,0,0,1);
+  color: rgba(0, 0, 0, 1);
   position: absolute;
   top: 18px;
   left: 427px;
@@ -1017,11 +1014,11 @@ table.lecture_list tbody {
   position: absolute;
   top: 14px;
   left: 427px;
-  border: 1px solid rgba(11,11,11,1);
+  border: 1px solid rgba(11, 11, 11, 1);
 }
 .v52_304 {
   width: 276px;
-  color: rgba(0,0,0,1);
+  color: rgba(0, 0, 0, 1);
   position: absolute;
   top: 18px;
   left: 151px;
@@ -1038,11 +1035,11 @@ table.lecture_list tbody {
   position: absolute;
   top: 14px;
   left: 151px;
-  border: 1px solid rgba(11,11,11,1);
+  border: 1px solid rgba(11, 11, 11, 1);
 }
 .v52_306 {
   width: 132px;
-  color: rgba(0,0,0,1);
+  color: rgba(0, 0, 0, 1);
   position: absolute;
   top: 18px;
   left: 19px;
@@ -1068,7 +1065,7 @@ table.lecture_list tbody {
 .v52_308 {
   width: 929px;
   height: 66px;
-  background: rgba(235,235,235,1);
+  background: rgba(235, 235, 235, 1);
   opacity: 1;
   position: absolute;
   top: 0px;
@@ -1077,7 +1074,7 @@ table.lecture_list tbody {
 }
 .v52_309 {
   width: 132px;
-  color: rgba(0,0,0,1);
+  color: rgba(0, 0, 0, 1);
   position: absolute;
   top: 18px;
   left: 427px;
@@ -1094,11 +1091,11 @@ table.lecture_list tbody {
   position: absolute;
   top: 14px;
   left: 427px;
-  border: 1px solid rgba(11,11,11,1);
+  border: 1px solid rgba(11, 11, 11, 1);
 }
 .v52_311 {
   width: 276px;
-  color: rgba(0,0,0,1);
+  color: rgba(0, 0, 0, 1);
   position: absolute;
   top: 18px;
   left: 151px;
@@ -1115,11 +1112,11 @@ table.lecture_list tbody {
   position: absolute;
   top: 14px;
   left: 151px;
-  border: 1px solid rgba(11,11,11,1);
+  border: 1px solid rgba(11, 11, 11, 1);
 }
 .v52_313 {
   width: 132px;
-  color: rgba(0,0,0,1);
+  color: rgba(0, 0, 0, 1);
   position: absolute;
   top: 18px;
   left: 19px;
@@ -1145,7 +1142,7 @@ table.lecture_list tbody {
 .v52_268 {
   width: 929px;
   height: 139px;
-  background: rgba(235,235,235,1);
+  background: rgba(235, 235, 235, 1);
   opacity: 1;
   position: absolute;
   top: 0px;
@@ -1154,7 +1151,7 @@ table.lecture_list tbody {
 }
 .v52_269 {
   width: 174px;
-  color: rgba(0,0,0,1);
+  color: rgba(0, 0, 0, 1);
   position: absolute;
   top: 97px;
   left: 738px;
@@ -1171,11 +1168,11 @@ table.lecture_list tbody {
   position: absolute;
   top: 89px;
   left: 738px;
-  border: 1px solid rgba(11,11,11,1);
+  border: 1px solid rgba(11, 11, 11, 1);
 }
 .v52_271 {
   width: 170px;
-  color: rgba(0,0,0,1);
+  color: rgba(0, 0, 0, 1);
   position: absolute;
   top: 97px;
   left: 568px;
@@ -1192,11 +1189,11 @@ table.lecture_list tbody {
   position: absolute;
   top: 89px;
   left: 568px;
-  border: 1px solid rgba(11,11,11,1);
+  border: 1px solid rgba(11, 11, 11, 1);
 }
 .v52_273 {
   width: 549px;
-  color: rgba(0,0,0,1);
+  color: rgba(0, 0, 0, 1);
   position: absolute;
   top: 97px;
   left: 19px;
@@ -1213,11 +1210,11 @@ table.lecture_list tbody {
   position: absolute;
   top: 77px;
   left: 19px;
-  border: 1px solid rgba(11,11,11,1);
+  border: 1px solid rgba(11, 11, 11, 1);
 }
 .v52_275 {
   width: 925px;
-  color: rgba(0,0,0,1);
+  color: rgba(0, 0, 0, 1);
   position: absolute;
   top: 20px;
   left: 4px;
@@ -1230,7 +1227,7 @@ table.lecture_list tbody {
 .v52_276 {
   width: 402px;
   height: 567px;
-  background: rgba(219,218,242,1);
+  background: rgba(219, 218, 242, 1);
   opacity: 1;
   position: absolute;
   top: 283px;
@@ -1253,7 +1250,7 @@ table.lecture_list tbody {
 .v52_284 {
   width: 321px;
   height: 118px;
-  background: rgba(103,92,148,1);
+  background: rgba(103, 92, 148, 1);
   opacity: 1;
   position: absolute;
   top: 0px;
@@ -1262,7 +1259,7 @@ table.lecture_list tbody {
 }
 .v52_285 {
   width: 281px;
-  color: rgba(255,255,255,1);
+  color: rgba(255, 255, 255, 1);
   position: absolute;
   top: 58px;
   left: 37px;
@@ -1274,7 +1271,7 @@ table.lecture_list tbody {
 }
 .v52_286 {
   width: 281px;
-  color: rgba(255,255,255,1);
+  color: rgba(255, 255, 255, 1);
   position: absolute;
   top: 17px;
   left: 37px;
@@ -1287,7 +1284,7 @@ table.lecture_list tbody {
 .v59_57 {
   width: 321px;
   height: 303px;
-  background: rgba(103,92,148,1);
+  background: rgba(103, 92, 148, 1);
   opacity: 1;
   position: absolute;
   top: 197px;
@@ -1301,11 +1298,11 @@ table.lecture_list tbody {
   position: absolute;
   top: 156px;
   left: 22px;
-  border: 1px solid rgba(255,255,255,1);
+  border: 1px solid rgba(255, 255, 255, 1);
 }
 .v59_59 {
   width: 274px;
-  color: rgba(255,255,255,1);
+  color: rgba(255, 255, 255, 1);
   position: absolute;
   top: 78px;
   left: 24px;
@@ -1322,11 +1319,11 @@ table.lecture_list tbody {
   position: absolute;
   top: 78px;
   left: 23px;
-  border: 1px solid rgba(255,255,255,1);
+  border: 1px solid rgba(255, 255, 255, 1);
 }
 .v59_61 {
   width: 274px;
-  color: rgba(255,255,255,1);
+  color: rgba(255, 255, 255, 1);
   position: absolute;
   top: 0px;
   left: 24px;
@@ -1339,7 +1336,7 @@ table.lecture_list tbody {
 .v52_287 {
   width: 100%;
   height: 283px;
-  background: rgba(103,92,148,1);
+  background: rgba(103, 92, 148, 1);
   opacity: 1;
   position: absolute;
   top: 0px;
@@ -1348,7 +1345,7 @@ table.lecture_list tbody {
 }
 .v52_288 {
   width: 541px;
-  color: rgba(255,255,255,1);
+  color: rgba(255, 255, 255, 1);
   position: absolute;
   top: 122px;
   left: 450px;
@@ -1369,5 +1366,23 @@ table.lecture_list tbody {
   position: absolute;
   top: 78px;
   left: 115px;
+  overflow: hidden;
+}
+.logout {
+  width: 139px;
+  height: 52px;
+  position: absolute;
+}
+
+.logout input {
+  width: 139px;
+  height: 52px;
+  background: rgba(103, 92, 148, 1);
+  color: white;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 230px;
+  left: 1300px;
   overflow: hidden;
 }
