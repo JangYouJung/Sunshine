@@ -8,7 +8,7 @@ var cookieParser = require("cookie-parser");
 var path = require("path");
 var ejs = require("ejs");
 var login = require("./login");
-//var join = require('./join');
+var join = require("./join");
 var logout = require("./logout");
 
 app.use(express.static(__dirname + "/public"));
@@ -70,9 +70,51 @@ app.get("/login", (req, res) => {
   res.render("login");
 });
 
+app.get("/join", (req, res) => {
+  res.render("join");
+});
+
+app.get("/staff_attendance", (req, res) => {
+  res.send("staff_attendance");
+});
+
+app.get("/staff_attendancelist", (req, res) => {
+  res.send("staff_attendancelist");
+});
+
+app.get("/staff_lecturelist", (req, res) => {
+  res.send("staff_lecturelist");
+});
+
+app.get("/staff_main", (req, res) => {
+  res.send("staff_main");
+});
+
+/*
+app.get("/student_attendance_error", (req, res) => {
+  res.send("student_attendance_error");
+});
+
+app.get("/student_attendance_suc", (req, res) => {
+  res.send("student_attendance_suc");
+});
+*/
+app.get("/student_attendance", (req, res) => {
+  res.send("student_attendance");
+});
+
+app.get("/student_main", (req, res) => {
+  res.send("student_main");
+});
+
+app.get("/student_my", (req, res) => {
+  res.send("student_my");
+});
+
 app.use("/", login);
-//app.use("/join", join);
+app.use("/join", join);
 app.use("/logout", logout);
 
-app.listen("80");
+app.listen("8080");
+
 module.exports = router;

@@ -10,6 +10,7 @@ var server = require("./server");
 var cookieParser = require("cookie-parser");
 var router = express.Router();
 
+
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
@@ -28,8 +29,8 @@ app.use(
 const connection = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "password!",
-  database: "mysql",
+  password: "sunshine",
+  database: "sunshine",
 });
 
 connection.connect();
