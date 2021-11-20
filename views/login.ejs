@@ -1,75 +1,91 @@
-<!--로그인-->
 <!DOCTYPE html>
 <html>
-<head>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <link href="../CSS/StyleSheet1.css" rel="stylesheet" />
     <title>Document</title>
-   
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="v100_5">
-        <div class="v100_6">
-            <span class="v100_7">
-                우편번호 : 02844, 서울특별시 성북구 보문로 34다길 2, 수정관 1층 대학일자리센터>인재개발팀<br>
-                TEL : 02-920-7009, 7993(시스템 관련) / 7838(산학협동 인턴십) / 7986(S+마일리지) / 7141, 7016(비교과 프로그램)<br>
-                E-MAIL : jobs@sungshin.ac.kr(기업용), hrd@sungshin.ac.kr(학생전용)  FAX : 02-920-7116<br>
-                COPYRIGHT©2019 SUNGSHIN WOMEN'S UNIVERSITY. ALL RIGHTS RESERVED.
-            </span>
+      <div class="v100_6">
+        <span class="v100_7">
+          우편번호 : 02844, 서울특별시 성북구 보문로 34다길 2, 수정관 1층
+          대학일자리센터>인재개발팀<br />
+          TEL : 02-920-7009, 7993(시스템 관련) / 7838(산학협동 인턴십) /
+          7986(S+마일리지) / 7141, 7016(비교과 프로그램)<br />
+          E-MAIL : jobs@sungshin.ac.kr(기업용), hrd@sungshin.ac.kr(학생전용) FAX
+          : 02-920-7116<br />
+          COPYRIGHT©2019 SUNGSHIN WOMEN'S UNIVERSITY. ALL RIGHTS RESERVED.
+        </span>
 
-            <div class="v39_207"></div>
-        </div>
-        <div class="v100_29">
-            <span class="v100_30">sunshine 특강 출결 사이트</span>
-            <a href="../HTML/student_main.html"><div class="v39_228"></div></a>
-        </div>
+        <div class="v39_207"></div>
+      </div>
+      <div class="v100_29">
+        <span class="v100_30">sunshine 특강 출결 사이트</span>
+        <div class="v39_228"></div>
+      </div>
 
+      <div class="v39_208">
+        <form action="/" method="POST">
+          <span class="v39_225">LOGIN</span>
 
-        <div class="v39_208">
-            <form action="login_process" method="POST">
-                <span class="v39_225">LOGIN</span>
+          <div class="v39_215">
+            <div class="input-box">
+              <input
+                id="userid"
+                type="text"
+                name="userid"
+                placeholder="아이디"
+                required
+              />
+            </div>
+          </div>
 
-                <div class="v39_215">
-                    <div class="input-box">
-                        <input id="userid" type="text" name="userid" placeholder="아이디" required>
-                    </div>
-                </div>
+          <div class="v39_212">
+            <div class="input-box">
+              <input
+                id="password"
+                type="password"
+                name="password"
+                placeholder="비밀번호"
+                required
+              />
+            </div>
+          </div>
 
+          <div class="v39_222">
+            <span class="v39_221"
+              ><label
+                ><input type="radio" name="job" value="student" required /> 학생
+                로그인</label
+              ></span
+            >
+          </div>
 
-                <div class="v39_212">
-                    <div class="input-box">
-                        <input id="password" type="password" name="password" placeholder="비밀번호" required>
-                    </div>
-                </div>
+          <div class="v39_219">
+            <span class="v39_221"
+              ><label
+                ><input type="radio" name="job" value="staff" required /> 교직원
+                로그인</label
+              ></span
+            >
+          </div>
 
+          <a href="../HTML/join.html"
+            ><span class="v39_218"> 학생 회원가입</span></a
+          >
 
-                <div class="v39_222">
-                    <span class="v39_221"><label><input type="radio" name="job" value="student"> 학생 로그인</label></span>
-                </div>
-
-                <div class="v39_219">
-                    <span class="v39_221"><label><input type="radio" name="job" value="staff"> 교직원 로그인</label></span>
-                </div>
-
-                <a href="../HTML/join.html"><span class="v39_218"> 학생 회원가입</span></a>
-
-                <div class="v39_209">
-                    <div class="submit">
-                        <input type="submit" value="로그인">
-                    </div>
-                </div>
-
-
-            </form>
-
-
-         </div>
-     </div>
-
-
-
-
-</body>
+          <div class="v39_209">
+            <div class="submit">
+              <input type="submit" value="로그인" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
-

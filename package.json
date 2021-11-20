@@ -2,14 +2,15 @@
   "name": "nodejs-web-app1",
   "version": "0.0.0",
   "description": "NodejsWebApp1",
-  "main": "login.js",
+  "main": "server.js",
   "author": "",
   "scripts": {
-    "start": "node login.js"
+    "start": "node server.js"
   },
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.6",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
     "express-mysql-session": "^2.1.7",
@@ -20,10 +21,10 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git://github.com/leenayeon1/repository.git"
+    "url": "git://github.com/MinYeongPark/Sunshine.git"
   },
   "bugs": {
-    "url": "https://github.com/leenayeon1/repository/issues"
+    "url": "https://github.com/MinYeongPark/Sunshine/issues"
   },
-  "homepage": "https://github.com/leenayeon1/repository#readme"
+  "homepage": "https://github.com/MinYeongPark/Sunshine#readme"
 }
