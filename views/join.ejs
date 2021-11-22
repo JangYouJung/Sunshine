@@ -31,7 +31,12 @@
       </div>
 
       <div class="v100_9">
-        <form method="post" action="/join">
+        <form
+          method="post"
+          action="/join"
+          name="form"
+          onsubmit="return checkAll()"
+        >
           <div class="v100_24">
             <div class="v100_25">
               <input
@@ -41,10 +46,6 @@
                 placeholder="학번"
                 required
               />
-            </div>
-
-            <div class="v100_25_1">
-              <input type="submit" value="확인" />
             </div>
 
             <span class="v100_26">학번</span>
