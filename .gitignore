@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 node_modules
 package-lock
 sessions/Y7KA6W_Ic6ted9VYfcuNs5eRlG0Pxqih.json
 obj/Debug
+=======
+node_modules;
+sessions;
+>>>>>>> 6d5afe8c5b8b680a6222cc6efac9aeb77b837920
