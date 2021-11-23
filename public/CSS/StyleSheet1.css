@@ -1051,6 +1051,7 @@ table.type01 th {
 table.type01 td {
   border-bottom: 1px solid #444444;
   padding: 10px;
+  text-align: center;
 }
 
 .logout {
