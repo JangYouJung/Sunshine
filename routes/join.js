@@ -1,8 +1,8 @@
 var express = require("express");
 var app = express();
 var router = express.Router();
-var connection = require("../config/db");
-let bcrypt = require("bcrypt");
+var connection = require("../config/db"); //디비 사용위해 필요
+let bcrypt = require("bcrypt"); //비번 암호화위한 것
 
 router.get("/", function (req, res) {
   res.setHeader("Content-type", "text/html;charset=UTF-8");
