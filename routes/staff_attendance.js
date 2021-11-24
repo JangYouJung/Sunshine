@@ -1,6 +1,7 @@
 var express = require("express");
 var app = express();
 var router = express.Router();
+var connection = require("../config/db");//디비 사용위해 필요, connection.query()식으로 사용
 
 router.get("/", function (req, res) {
   if (req.session.uid) {
