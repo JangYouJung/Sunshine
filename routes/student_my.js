@@ -15,7 +15,7 @@ router.get("/", function (req, res) {
       function (err, rows) {
         if (rows.length) {
           if (rows[0].student_id === req.session.uid) {//req.session.uid는 로그인한 사람의 세션 아이디로 로그인할때 아이디와 같습니다(학생, 직원 상관없이 req.session.uid로 비교하면 됩니다)
-            var context = [rows[0].student_id, rows[0].student_name]; //context에 학생의 이름 학번 정보 넣기 ->data이름으로 html로 전송
+            var context = [rows[0].student_id, rows[0].student_name]; //context에 학생의 이름 학번 정보 넣기 
             //res.render("student_my", { data: context });
 
             const context1 = [];
@@ -29,9 +29,9 @@ router.get("/", function (req, res) {
                 }
 
                 for (var i = 0; i < rows1.length; i++) {
-                  context1[i] = [rows1[i]];
+                  context1[i] = [rows1[i]]; //context1에 학생이 수강한 과목 정보 넣기
                 }
-                res.render("student_my", { data: context, data1: context1 }); //student_my.ejs에 데이터 넘기기
+                res.render("student_my", { data: context, data1: context1 }); //student_my.ejs에 데이터 넘기기(data는 학생의 이름,학번 정보, data1은 학생이 들은 과목 정보)
               }
             );
           }
