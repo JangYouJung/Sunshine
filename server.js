@@ -32,7 +32,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(cookieParser());
 
-app.use(
+app.use( //세션 설정
   session({
     secret: "keyboard cat",
     resave: false,
@@ -76,9 +76,9 @@ app.get("/", (req, res) => {
   }
 });
 
-app.use("/", login);
+app.use("/", login);  
 app.use("/join", join);
-app.use("/login", login);
+app.use("/login", login);  
 app.use("/logout", logout);
 app.use("/staff_attendance", staff_attendance);
 app.use("/staff_attendancelist", staff_attendancelist);
@@ -88,7 +88,7 @@ app.use("/staff_studentlist", staff_studentlist);
 app.use("/student_attendance_error", student_attendance_error);
 app.use("/student_attendance_suc", student_attendance_suc);
 app.use("/student_attendance", student_attendance);
-app.use("/student_main", student_main);
+app.use("/student_main", student_main); //ejs파일에서 <a href="/student_main">이런식으로 링크 설정해주면 라우터 모듈안의 student_main이 불러와짐->라우터 모듈안의 student_main은 ejs파일을 렌더링해줌
 app.use("/student_my", student_my);
 
 app.listen("8080");
