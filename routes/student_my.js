@@ -7,16 +7,14 @@ router.get("/", function (req, res) {//req는 받은 것을 보여주기 위한 
   console.log(req.session);
 
   if (req.session.uid) {//req.session.uid가 있으면 로그인 되어있다는 뜻
-    //res.render("student_my");
-
+    
     connection.query(
       "select * from student where student_id=?",
       [req.session.uid],
       function (err, rows) {
         if (rows.length) {
-          if (rows[0].student_id === req.session.uid) {//req.session.uid는 로그인한 사람의 세션 아이디로 로그인할때 아이디와 같습니다(학생, 직원 상관없이 req.session.uid로 비교하면 됩니다)
-            var context = [rows[0].student_id, rows[0].student_name]; //context에 학생의 이름 학번 정보 넣기 
-            //res.render("student_my", { data: context });
+          if (rows[0].student_id === req.session.uid) {//req.session.uid는 로그인한 사람의 세션 아이디로 로그인할때의 아이디로 설정했음(학생, 직원 상관없이 req.session.uid로 비교하면 됨)
+            var context = [rows[0].student_id, rows[0].student_name]; //context에 학생의 이름, 학번 넣기 
 
             const context1 = [];
 
