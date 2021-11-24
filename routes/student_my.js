@@ -6,7 +6,7 @@ var connection = require("../config/db");
 router.get("/", function (req, res) {
   console.log(req.session);
 
-  if (req.session.uid) {
+  if (req.session.uid) {//req.session.uid가 있으면 로그인 되어있다는 뜻
     //res.render("student_my");
 
     connection.query(
