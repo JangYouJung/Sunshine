@@ -9,7 +9,7 @@ router.get("/", function (req, res) {
   if (!req.session.uid) {
     res.render("join", {
       login_id: req.session.uid,
-    });
+    }); //로그인 되어있지 않으면 join.ejs창을 브라우저에 렌더링해줌, res.render("join")에서 join은 join.ejs를 말하는것임(ejs확장자는 생략가능함)
   } else {
     res.write(
       "<script type='text/javascript'>alert('You are already logged in.');</script>"
@@ -18,7 +18,7 @@ router.get("/", function (req, res) {
   }
 });
 
-router.post("/", function (req, res) {
+router.post("/", function (req, res) { // join.ejs에서 post로 요청한 기능 구현
   var join_id = req.body.userid;
   var join_name = req.body.username;
   var join_pwd = req.body.password;
@@ -32,7 +32,7 @@ router.post("/", function (req, res) {
   connection.query(
     "select student_id from student where student_id=?",
     [join_id],
-    function (err, rows) {
+    function (err, rows) { //학번이 이미있으면 실패
       if (rows.length) {
         console.log("회원가입 실패");
         res.write(
@@ -44,25 +44,25 @@ router.post("/", function (req, res) {
           "select email from student where email=?",
           [join_email],
           function (err, rows) {
-            if (rows.length) {
+            if (rows.length) { //이메일이 이미있으면 실패
               console.log("회원가입 실패");
               res.write(
                 "<script>alert('The same EMAIL already exists. join fail')</script>"
               );
               res.write('<script>window.location="/join"</script>');
-            } else {
+            } else { //비밀번호를 암호화해서 저장
               bcrypt.hash(sql_insert[2], saltRounds, (error, hash) => {
                 sql_insert[2] = hash;
                 console.log(sql_insert);
                 connection.query(
                   "insert into student(student_id, student_name, student_pwd, email) values(?,?,?,?)",
                   sql_insert,
-                  function (err, rows) {
+                  function (err, rows) { //student테이블에 삽입해줌
                     if (err) throw err;
                     console.log("ok");
                     console.log(sql_insert);
                     res.write("<script>alert('success')</script>");
-                    res.write('<script>window.location="/login"</script>');
+                    res.write('<script>window.location="/login"</script>'); //성공 알림창의 확인버튼 누르면 로그인 페이지로 이동
                   }
                 );
               });
