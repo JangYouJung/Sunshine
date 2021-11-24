@@ -1,2 +1,6 @@
-node_modules;
-sessions;
+
+node_modules
+package-lock
+sessions/Y7KA6W_Ic6ted9VYfcuNs5eRlG0Pxqih.json
+obj/Debug
+

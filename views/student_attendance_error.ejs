@@ -9,7 +9,11 @@
     <script src="../SCRIPT/back_script.js" type="text/javascript"></script>
     <title>Document</title>
   </head>
-  <body>
+   <body
+    onload="noBack();"
+    onpageshow="if(event.persisted) noBack();"
+    onunload=""
+  >
     <div class="v40_366">
       <div class="v40_367">
         <span class="v40_326">
@@ -46,7 +50,7 @@
       </div>
       <div class="v40_384">
         <span class="v40_343">sunshine 특강 출결 사이트</span>
-        <a href="../HTML/student_main.html"><div class="v40_344"></div></a>
+        <a href="/student_main"><div class="v40_344"></div></a>
         <form method="get" action="/logout">
           <div class="logout">
             <input type="submit" value="로그아웃" />
