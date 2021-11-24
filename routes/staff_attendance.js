@@ -8,6 +8,7 @@ router.get("/", function (req, res) {
     res.render("staff_attendance");
     /*
     여기에 render("staff_attendance", { data: context, data1: context1 }) 이런식으로 데이터 넘겨주는 쿼리 작성
+     쿼리 작성끝내면 위의 res.render("staff_attendance");문은 지워야함(res.render("staff_attendance")는 staff_attendance.ejs을 렌더링 할것이라는 뜻)
     */
   } else {
     res.write(
