@@ -3,7 +3,7 @@ var app = express();
 var router = express.Router();
 var connection = require("../config/db");
 
-router.get("/", function (req, res) {
+router.get("/", function (req, res) {//req는 받은 것을 보여주기 위한 것, res는 보내기 위한 것
   console.log(req.session);
 
   if (req.session.uid) {//req.session.uid가 있으면 로그인 되어있다는 뜻
