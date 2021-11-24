@@ -1,7 +1,7 @@
 var express = require("express");
 var app = express();
 var router = express.Router();
-var connection = require("../config/db");
+var connection = require("../config/db");  //디비 사용할려면 넣어줘야 함, connection.query()이런 식으로 사용
 
 router.get("/", function (req, res) {//req는 받은 것을 보여주기 위한 것, res는 보내기 위한 것
   console.log(req.session);
