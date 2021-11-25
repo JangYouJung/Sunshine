@@ -7,16 +7,14 @@ router.get("/", function (req, res) {
   console.log(req.session);
 
   if (req.session.uid) {
-    //res.render("student_my");
 
     connection.query(
       "select * from student where student_id=?",
       [req.session.uid],
       function (err, rows) {
         if (rows.length) {
-          if (rows[0].student_id === req.session.uid) {
+          if (rows[0].student_id === req.session.uid) { 
             var context = [rows[0].student_id, rows[0].student_name];
-            //res.render("student_my", { data: context });
 
             const context1 = [];
 
@@ -29,7 +27,7 @@ router.get("/", function (req, res) {
                 }
 
                 for (var i = 0; i < rows1.length; i++) {
-                  context1[i] = [rows1[i]];
+                  context1.push(rows1[i]);
                 }
                 res.render("student_my", { data: context, data1: context1 });
               }
