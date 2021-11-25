@@ -43,14 +43,13 @@
 
         <div class="v114_104">
           <table class="type01">
-            <% for(var i=0; i < data1.length; i++){ %> 
-              <% for(var j=0; j <data1[i].length; j++){ %>
+            <% for(var i=0; i < data1.length; i++){ %>             
             <tr>
-              <td><%= i+1 %></td>
-              <td><%= data1[i][j].course_date %></td>
-              <td><%= data1[i][j].degree %></td>
-              <td><%= data1[i][j].course_name %></td>
-              <%}}%>
+              <td><%= i+1 %></td>  
+              <td><%= data1[i].course_date %></td>
+              <td><%= data1[i].degree %></td>
+              <td><%= data1[i].course_name %></td>
+              <%}%>
             </tr>
           </table>
         </div>
