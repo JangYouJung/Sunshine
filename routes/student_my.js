@@ -27,7 +27,7 @@ router.get("/", function (req, res) {
                 }
 
                 for (var i = 0; i < rows1.length; i++) {
-                  context1.push(rows1[i]);
+                  context1[i] = [rows[i]];
                 }
                 res.render("student_my", { data: context, data1: context1 });
               }
