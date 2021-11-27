@@ -27,7 +27,7 @@ router.get("/", function (req, res) {//req는 받은 것을 보여주기 위한 
                 }
 
                 for (var i = 0; i < rows1.length; i++) {
-                  context1.push(rows1[i]); //context1에 학생이 수강한 과목 정보 넣기
+                  context1[i] = [rows[i]]; //context1에 학생이 수강한 과목 정보 넣기
                 }
                 res.render("student_my", { data: context, data1: context1 }); //student_my.ejs에 데이터 넘기기(data는 학생의 이름,학번 정보, data1은 학생이 들은 과목 정보)
               }
