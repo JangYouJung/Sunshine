@@ -1,7 +1,7 @@
 {
-  "name": "nodejs-web-app1",
+  "name": "web-app4",
   "version": "0.0.0",
-  "description": "NodejsWebApp1",
+  "description": "WebApp4",
   "main": "server.js",
   "author": "",
   "scripts": {

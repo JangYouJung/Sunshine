@@ -83,7 +83,7 @@ router.post("/", function (req, res) { //login.ejs에서 post로 넘겨준 기�
                 }
                 console.log("직원 로그인");
                 console.log(req.session);
-                res.render("staff_main");
+                res.redirect("/staff_main");
               });
             }
           }

@@ -19,6 +19,7 @@ var student_attendance = require("./routes/student_attendance");
 var student_main = require("./routes/student_main");
 var student_my = require("./routes/student_my");
 var staff_studentlist = require("./routes/staff_studentlist");
+var staff_att_start = require("./routes/staff_att_start");
 var user_session = require("./user.session");
 
 app.use(express.static(__dirname + "/public"));
@@ -90,7 +91,7 @@ app.use("/student_attendance_suc", student_attendance_suc);
 app.use("/student_attendance", student_attendance);
 app.use("/student_main", student_main); //ejs파일에서 <a href="/student_main">이런식으로 링크 설정해주면 라우터 모듈안의 student_main이 불러와짐->라우터 모듈안의 student_main은 ejs파일을 렌더링해줌
 app.use("/student_my", student_my);
-
-app.listen("8080");
+app.use("/staff_att_start", staff_att_start);
+app.listen("80");
 
 module.exports = app;
