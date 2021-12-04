@@ -351,7 +351,7 @@ body {
   left: 0px;
   overflow: hidden;
 }
-.timer {
+#timer {
   width: 186px;
   height: 146px;
   background: rgba(255, 255, 255, 1);

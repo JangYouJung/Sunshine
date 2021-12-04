@@ -46,14 +46,13 @@ router.get("/", function (req, res) {
 									
 									var valid = rows2[0].att_valid;
 
-									if(valid){ //유효한 인증 번호가 있을 경우
+									if(valid){//유효한 인증 번호가 있을 경우										
 										/*
-										setInterval(function(){ //1초마다 실행
-											
+										setInterval(function(){ //1초마다 실행											
 											console.log('실행');
 											connection.query( 
-												"SELECT course_id, date_format(attendance_date, '%Y년 %m월 %d일 ') AS att_date, degree, attendance_personnel AS atts, attendance_num AS att_num, date_format(attendance_time, '%H시 %i분 %s초') AS att_time FROM attendance_info WHERE course_id=? AND att_valid = 1; SELECT att_time AS att_time2 FROM attendance_info WHERE course_id=? AND att_valid= 1;",
-											[queryData.id],
+												"SELECT course_id, date_format(attendance_date, '%Y년 %m월 %d일 ') AS att_date, degree, attendance_num AS att_num, date_format(attendance_time, '%H시 %i분 %s초') AS att_time FROM attendance_info WHERE course_id=? AND att_valid = 1; SELECT attendance_time AS att_time2 FROM attendance_info WHERE course_id=? AND att_valid= 1;",
+											[queryData.id, queryData.id],
 											function(err3,rows3){
 												if(err3){
 													throw err3;
@@ -62,15 +61,15 @@ router.get("/", function (req, res) {
 													var now = new Date().getTime();
 													var att_time2 = rows[0].att_time2;
 													var timer = now - att_time2;
+													
+													console.log("timer: "+timer);
 
-													console.log(timer);
-
-													var context2 = [rows3[0].att_num, ''.concat(rows3[0].degree, '차시'), rows3[0].att_date, rows3[0].att_time, rows3[0].course_id ];
+													var context2 = [rows3[0].att_num, ''.concat(rows3[0].degree, '차시'), rows3[0].att_date, rows3[0].att_time, rows3[0].course_id, timer ];
 													res.render("staff_attendance", {data: context, course: context1, att: context2 });
 											}
 										});
-										},1000);*/
-										
+										},1000);
+*/										
 										connection.query( 
 											"SELECT course_id, date_format(attendance_date, '%Y년 %m월 %d일 ') AS att_date, degree, attendance_personnel AS atts, attendance_num AS att_num, date_format(attendance_time, '%H시 %i분 %s초') AS att_time FROM attendance_info WHERE course_id=? AND att_valid = 1 ",
 										[queryData.id],
@@ -84,7 +83,7 @@ router.get("/", function (req, res) {
 
 											}
 										});
-										
+											
 									}
 									else{ //유효한 인증 번호가 없을 경우 빈화면 띄워주기 
 										var context2 = ["인증 번호를 생성하세요", "", "", "", queryData.id];
