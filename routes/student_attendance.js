@@ -50,12 +50,13 @@ router.post("/", function(req, res) {
   var course_name = req.body.v40_341;   // 학생이 선택한 특강 이름
   
   connection.query(
-    "SELECT * FROM course INNER JOIN attendance_info ON course.course_id = attendance_info.course_id WHERE course.course_name = ? and course.att_valid = 1", 
+    "SELECT * FROM course INNER JOIN attendance_info ON course.course_id = attendance_info.course_id WHERE course.course_name = ? and attendance_info.att_valid = 1", 
     [course_name], 
     function(error, course) {
       if (course.length) { // 선택한 특강 이름과 일치하고 현재 유효한 강의를 찾은 경우
         var course_id = course[0].course_id;           // 특강 ID
         var course_degree = course[0].degree;          // 특강 차시
+        console.log(course_degree);
         var attendance_num = course[0].attendance_num; // 출석 인증 번호
 
         connection.query( 
@@ -72,8 +73,15 @@ router.post("/", function(req, res) {
                   "INSERT INTO attendance(student_id,course_id,degree) VALUES (?,?,?)",
                   [student_id, course_id, course_degree],
                   function(error3, rows2) {
-                    if (error3) throw error3;
-                    res.render("student_attendance_suc");
+                    connection.query(
+                      "UPDATE attendance_info SET attendance_personnel = attendance_personnel + 1 WHERE course_id = ? and degree = ?",
+                      [course_id, course_degree],
+                      function(error4, rows3) {
+                        if (error4) throw error3;
+                        res.render("student_attendance_suc");
+                      }
+                    )
+                    
                   }
                 );
               } else { // 출석 번호가 일치하지 않은 경우
