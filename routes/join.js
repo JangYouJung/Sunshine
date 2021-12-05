@@ -1,5 +1,4 @@
 var express = require("express");
-var app = express();
 var router = express.Router();
 var connection = require("../config/db");
 let bcrypt = require("bcrypt");
@@ -27,12 +26,11 @@ router.post("/", function (req, res) {
   var sql_insert = [join_id, join_name, join_pwd, join_email];
 
   var saltRounds = 10;
-  console.log(sql_insert);
 
   connection.query(
     "select student_id from student where student_id=?",
     [join_id],
-    function (err, rows) {
+    function (err, rows) {//학번이 이미 있으면 실패
       if (rows.length) {
         console.log("회원가입 실패");
         res.write(
@@ -53,14 +51,12 @@ router.post("/", function (req, res) {
             } else {
               bcrypt.hash(sql_insert[2], saltRounds, (error, hash) => {
                 sql_insert[2] = hash;
-                console.log(sql_insert);
                 connection.query(
                   "insert into student(student_id, student_name, student_pwd, email) values(?,?,?,?)",
                   sql_insert,
                   function (err, rows) {
                     if (err) throw err;
                     console.log("ok");
-                    console.log(sql_insert);
                     res.write("<script>alert('success')</script>");
                     res.write('<script>window.location="/login"</script>');
                   }

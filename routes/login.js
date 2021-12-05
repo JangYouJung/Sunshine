@@ -1,12 +1,10 @@
 var express = require("express");
-var app = express();
 var router = express.Router();
 var connection = require("../config/db");
 let bcrypt = require("bcrypt");
 
 router.get("/", (req, res) => {
   console.log("로그인페이지 작동");
-  console.log(req.session);
 
   if (req.session.uid) {
     res.write(
@@ -16,7 +14,6 @@ router.get("/", (req, res) => {
   } else {
     res.render("login");
   }
- 
 });
 
 router.post("/", function (req, res) {
@@ -24,7 +21,7 @@ router.post("/", function (req, res) {
   var pw = req.body.password;
   var job = req.body.job;
 
-  console.log("post received: %s %s %s", id, pw, job);
+  //console.log("post received: %s %s %s", id, pw, job);
 
   if (job === "student") {
     connection.query(
@@ -48,8 +45,7 @@ router.post("/", function (req, res) {
                     throw err;
                   }
                   console.log("학생 로그인");
-                  console.log(req.session);
-                  res.render("student_main");
+                  res.redirect("/student_main");
                 });
               }
             });
@@ -82,8 +78,7 @@ router.post("/", function (req, res) {
                   throw err;
                 }
                 console.log("직원 로그인");
-                console.log(req.session);
-                res.render("staff_main");
+                res.redirect("staff_main");
               });
             }
           }

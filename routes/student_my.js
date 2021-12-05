@@ -1,14 +1,10 @@
 var express = require("express");
-var app = express();
 var router = express.Router();
 var connection = require("../config/db");
 
 router.get("/", function (req, res) {
-  console.log(req.session);
 
   if (req.session.uid) {
-    //res.render("student_my");
-
     connection.query(
       "select * from student where student_id=?",
       [req.session.uid],
@@ -16,12 +12,11 @@ router.get("/", function (req, res) {
         if (rows.length) {
           if (rows[0].student_id === req.session.uid) {
             var context = [rows[0].student_id, rows[0].student_name];
-            //res.render("student_my", { data: context });
 
             const context1 = [];
 
             connection.query(
-              "select date_format(course_date, '%Y-%m-%d') as course_date, degree, course_name from course join attendance on course.course_id = attendance.course_id and attendance.student_id=?",
+              "select date_format(course.course_date, '%Y-%m-%d') as course_date, attendance.degree, course.course_name from course join attendance on course.course_id = attendance.course_id and attendance.student_id=?",
               [req.session.uid],
               function (err, rows1) {
                 if (err) {
@@ -29,7 +24,7 @@ router.get("/", function (req, res) {
                 }
 
                 for (var i = 0; i < rows1.length; i++) {
-                  context1[i] = [rows1[i]];
+                  context1.push(rows1[i]);
                 }
                 res.render("student_my", { data: context, data1: context1 });
               }
