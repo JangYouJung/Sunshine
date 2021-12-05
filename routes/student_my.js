@@ -5,12 +5,13 @@ var connection = require("../config/db");
 router.get("/", function (req, res) {
 
   if (req.session.uid) {
+
     connection.query(
       "select * from student where student_id=?",
       [req.session.uid],
       function (err, rows) {
         if (rows.length) {
-          if (rows[0].student_id === req.session.uid) {
+          if (rows[0].student_id === req.session.uid) { 
             var context = [rows[0].student_id, rows[0].student_name];
 
             const context1 = [];
@@ -24,7 +25,11 @@ router.get("/", function (req, res) {
                 }
 
                 for (var i = 0; i < rows1.length; i++) {
+<<<<<<< HEAD
                   context1.push(rows1[i]);
+=======
+                  context1[i] = [rows[i]];
+>>>>>>> 4f5e36bb36fe215a403daec2ed9f7aa528a8d2ed
                 }
                 res.render("student_my", { data: context, data1: context1 });
               }
