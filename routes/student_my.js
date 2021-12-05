@@ -17,7 +17,7 @@ router.get("/", function (req, res) {
             const context1 = [];
 
             connection.query(
-              "select date_format(course.course_date, '%Y-%m-%d') as course_date, attendance.degree, course.course_name from course join attendance on course.course_id = attendance.course_id and attendance.student_id=?",
+              "select date_format(course.course_date, '%Y-%m-%d') as course_date, attendance.degree, course.course_name from course join attendance on course.course_id = attendance.course_id and attendance.student_id=? order by course.course_id",
               [req.session.uid],
               function (err, rows1) {
                 if (err) {
@@ -25,11 +25,7 @@ router.get("/", function (req, res) {
                 }
 
                 for (var i = 0; i < rows1.length; i++) {
-<<<<<<< HEAD
                   context1.push(rows1[i]);
-=======
-                  context1[i] = [rows[i]];
->>>>>>> 4f5e36bb36fe215a403daec2ed9f7aa528a8d2ed
                 }
                 res.render("student_my", { data: context, data1: context1 });
               }
