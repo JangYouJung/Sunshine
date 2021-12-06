@@ -1,48 +1,21 @@
-/*let time = 180;
 
-function start_timer() {
-  document.getElementById("timer").innerHTML = "03:00";
-  time();
-}
-
-function time() {
-  myVar = setInterval(alertFunc, 1000);
-}
-
-function alertFunc() {
-  document.getElementById("timer").innerHTML = "01:00";
-  // let mm = String(Math.floor(time / 60)).padStart(2, "0");
-  //let ss = String(time % 60).padStart(2, "0");
-  let min = parseInt(time / 60);
-  let sec = time % 60;
-  let result = mm + ":" + ss;
-
-  document.getElementById("timer").innerHTML = result;
-  console.log(mm + "분 " + ss + "초");
-  time--;
-
-  if (time < 0) {
-    clearInterval(myVar);
-    document.getElementById("timer").innerHTML = "출석 종료";
-    return;
-  }
-}*/
-
-var timer;
+/*
+ * var timer;
 var isRunning = false;
 // 인증번호 발송하고 타이머 함수 실행
 function start_timer() {
-  
   // 남은 시간
-  var leftSec = 180;
-  
+  var leftSec = 30;
+
   // 이미 타이머가 작동중이면 중지
   if (isRunning) {
     //document.getElementById("timer").innerHTML = "ggg";
     clearInterval(timer);
     console.log("running");
   }
+
   startTimer(leftSec);  
+
 }
 
 function startTimer(count) {
@@ -62,7 +35,7 @@ function startTimer(count) {
       isRunning = false;
     }
   }, 1000);
-}
+
 /*
 var connection = require("../../config/db");
 
@@ -110,3 +83,4 @@ function start_timer() {
     }
   );
 }*/
+

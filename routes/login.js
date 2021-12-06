@@ -80,6 +80,7 @@ router.post("/", function (req, res) { //login.ejs에서 post로 넘겨준 기�
                   throw err;
                 }
                 console.log("직원 로그인");
+
                 res.redirect("staff_main");
               });
             }

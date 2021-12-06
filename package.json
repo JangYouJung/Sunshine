@@ -4,7 +4,6 @@
   "version": "0.0.0",
   "description": "WebApp1",
 
-
   "main": "server.js",
   "author": "",
   "scripts": {

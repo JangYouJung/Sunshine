@@ -34,65 +34,29 @@
 
       <div class="v41_210">
         <div class="v41_819">
-          <div class="v41_821">
-            <div class="v41_index1">강의 날짜</div>
-            <div class="v41_index2">강의명</div>
-            <div class="v41_index3">수강 인원</div>
-          </div>
-          <div class="v41_820">
-            <a href="/staff_attendance"
-              ><div class="lecture">
-                <div class="date">date1</div>
-                <div class="lecname">lecture1</div>
-                <div class="participants">수강 인원1</div>
-              </div></a
-            >
-            <a href="/staff_attendance"
-              ><div class="lecture">
-                <div class="date">date2</div>
-                <div class="lecname">lecture2</div>
-                <div class="participants">수강 인원2</div>
-              </div></a
-            >
-            <a href="/staff_attendance"
-              ><div class="lecture">
-                <div class="date">date</div>
-                <div class="lecname">lecture</div>
-                <div class="participants">수강 인원</div>
-              </div></a
-            >
-            <a href="/staff_attendance"
-              ><div class="lecture">
-                <div class="date">date</div>
-                <div class="lecname">lecture</div>
-                <div class="participants">수강 인원</div>
-              </div></a
-            >
-            <a href="/staff_attendance"
-              ><div class="lecture">
-                <div class="date">date</div>
-                <div class="lecname">lecture</div>
-                <div class="participants">수강 인원</div>
-              </div></a
-            >
-            <a href="/staff_attendance"
-              ><div class="lecture">
-                <div class="date">date</div>
-                <div class="lecname">lecture</div>
-                <div class="participants">수강 인원</div>
-              </div></a
-            >
-            <a href="/staff_attendance"
-              ><div class="lecture">
-                <div class="date">date</div>
-                <div class="lecname">lecture</div>
-                <div class="participants">수강 인원</div>
-              </div></a
-            >
-          </div>
+			<table class="v41_821">
+          		<tr>
+					<td>&nbsp;&nbsp;강의 날짜&nbsp;&nbsp;</td>
+					<td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;강의명&nbsp; &nbsp;</td>
+					<td>정원</td>
+				</tr>
+		  	</table> 
+		  
+		<div class="v114_104">
+			<table class="type01">
+            <% for(var i=0; i < data1.length; i++){ %> 
+              <% for(var j=0; j <data1[i].length; j++){ %>
+			  <tr onclick= "location.href='/staff_attendance?id=<%= data1[i][j].course_id %>'">
+              <td><%= data1[i][j].course_date %></td>
+              <td><%= data1[i][j].course_name %></td>
+              <td><%= data1[i][j].course_num %></td>
+              <%}}%>
+            </tr>
+          </table>
+        </div>
         </div>
       </div>
-
+	  
       <div class="v41_229">
         <div class="v41_230">
           <div class="v41_232"></div>
@@ -104,8 +68,8 @@
         </div>
         <div class="v41_236">
           <div class="v41_237"></div>
-          <span class="v41_238">인재개발팀</span>
-          <span class="v41_239">이성신(7016)</span>
+		  <span class="v41_238">인재개발팀</span>
+		  <span class="v41_239"><%= data[1] %>(<%= data[0] %>)</span>
         </div>
       </div>
 

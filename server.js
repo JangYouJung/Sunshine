@@ -21,6 +21,7 @@ var student_my = require("./routes/student_my");
 var email = require("./email");
 var staff_att_start = require("./routes/staff_att_start");
 var staff_studentlist = require("./routes/staff_studentlist");
+var staff_att_start = require("./routes/staff_att_start");
 var user_session = require("./user.session");
 
 app.use(express.static(__dirname + "/public"));
@@ -84,7 +85,5 @@ app.use("/staff_att_start", staff_att_start);
 email.surveyEmail(); //이메일 보내기 함수
 
 app.listen("80");
-
-
 
 module.exports = app;

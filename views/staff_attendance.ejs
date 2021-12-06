@@ -10,15 +10,16 @@
       rel="stylesheet"
     />
     <link href="../CSS/StyleSheet4.css" rel="stylesheet" />
-	<!--    <script src="../SCRIPT/back_script.js" type="text/javascript"></script>-->
+   <!--    <script src="../SCRIPT/back_script.js" type="text/javascript"></script>-->
     <script src="../SCRIPT/timer.js" type="text/javascript"></script>
-	<title>Document</title>
+   <title>Document</title>
   </head>
    <body
     onload="noBack();"
     onpageshow="if(event.persisted) noBack();"
     onunload=""
-	>
+  >
+
     <div class="v41_73">
       <div class="v41_206">
         <span class="v41_207">
@@ -35,29 +36,29 @@
 
       <div class="v41_77">
         <div class="v41_155">
-			<div class="v41_112"></div>
-			<div id="timer"></div>
-			<div class="v41_114"><%= att[0] %></div>
-						
-		<div class = "v41_113">	
-			<form method= "post" action="/staff_att_start" >
-					<input type= "hidden" name= "course_id" value= "<%=att[4]%>">
-						<button type= "button" class = "submit" onclick = "start_timer()">
-							<input type= "submit" value= "출석 시작" onclick= "start_timer()"/>
-						</button>
-			</form> 
-		</div>
-			<div class="v41_att_data">
-				<div class="v41_202"><%= att[1] %></div>
-				<div class="v41_203"><%= att[2] %><%= att[3] %></div>
-		  	</div>
+         <div class="v41_112"></div>
+         <div id="timer"></div>
+         <div class="v41_114"><%= att[0] %></div>
+                  
+      <div class = "v41_113">   
+         <form method= "post" action="/staff_att_start" >
+               <input type= "hidden" name= "course_id" value= "<%=att[4]%>">
+                  <button type= "button" class = "submit" onclick = "start_timer();">
+                     <input type= "submit" value= "출석 시작" onclick= "start_timer();"/>
+                  </button>
+         </form> 
+      </div>
+         <div class="v41_att_data">
+            <div class="v41_202"><%= att[1] %></div>
+            <div class="v41_203"><%= att[2] %><%= att[3] %></div>
+           </div>
         </div>
 
         <div class="att_box">
-			<div class="att_name"><%= course[0] %></div>
+         <div class="att_name"><%= course[0] %></div>
           <div class="att_info">
-			  <div class="att_date">강의일: <%= course[1] %></div>
-			  <div class="att_total">수강 인원: <%= course[2]%>명</div>
+           <div class="att_date">강의일: <%= course[1] %></div>
+           <div class="att_total">수강 인원: <%= course[2]%>명</div>
           </div>
         </div>
       </div>
@@ -74,7 +75,7 @@
         <div class="v41_236">
           <div class="v41_237"></div>
           <span class="v41_238">인재개발팀</span>
-		  <span class="v41_239"><%= data[1] %>(<%= data[0]%>)</span>
+        <span class="v41_239"><%= data[1] %>(<%= data[0]%>)</span>
         </div>
       </div>
 
