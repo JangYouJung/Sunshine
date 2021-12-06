@@ -52,25 +52,25 @@ app.get("/", (req, res) => {
 
   if (req.session.isStudent == true) {
     if (req.session.isLogined == true) {
-      res.render("student_main", {
+      res.redirect("student_main", {
         isLogined: req.session.isLogined,
         isStudent: req.session.isStudent,
         uid: req.session.uid,
       });
     } else {
-      res.render("login", {
+      res.redirect("login", {
         isLogined: false,
       });
     }
   } else {
     if (req.session.isLogined == true) {
-      res.render("staff_main", {
+      res.redirect("staff_main", {
         isLogined: req.session.isLogined,
         isStudent: req.session.isStudent,
         uid: req.session.uid,
       });
     } else {
-      res.render("login", {
+      res.redirect("login", {
         isLogined: false,
       });
     }

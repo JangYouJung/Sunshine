@@ -2,7 +2,7 @@ var express = require("express");
 var app = express();
 var router = express.Router();
 var connection = require("../config/db");//디비 사용위해 필요, connection.query()식으로 사용
-
+var timer = require("../public/SCRIPT/timer.js");
 var url = require('url');//url의 queryString에서 강의id를 추출하기 위해 사용
 
 
@@ -79,6 +79,7 @@ router.get("/", function (req, res) {
 											}
 											if(rows3){//유효한 인증 번호 불러서 띄워주기
 												var context2 = [rows3[0].att_num, ''.concat(rows3[0].degree, '차시'), rows3[0].att_date, rows3[0].att_time, rows3[0].course_id ];
+												timer.start_timer();
 												res.render("staff_attendance", {data: context, course: context1, att: context2 });
 
 											}
