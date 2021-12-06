@@ -52,7 +52,7 @@ body {
 .v40_328 {
   width: 100%;
   height: 567px;
-  background: url("../images/v40_328.png");
+  /* background: url("../images/v40_328.png"); */
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -62,7 +62,7 @@ body {
   left: 0px;
   overflow: hidden;
 }
-.v40_329 {
+#v40_329 {
   width: 897px;
   height: 303px;
   background: rgba(249, 242, 255, 1);
@@ -72,10 +72,22 @@ body {
   left: 271px;
   overflow: hidden;
 }
+#message {
+  width: 829px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 250px;
+  left: 270px;
+  font-family: Roboto;
+  font-weight: Bold;
+  font-size: 33px;
+  opacity: 1;
+  text-align: center;
+}
 .v40_330 {
   width: 66px;
   height: 88px;
-  background: url("../images/v40_330.png");
+  /* background: url("../images/v40_330.png"); */
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -96,12 +108,12 @@ body {
   border: 1px solid rgba(0, 0, 0, 1);
   overflow: hidden;
 }
-.v40_332 {
+.v40_331 input {
   width: 65px;
-  color: rgba(255, 255, 255, 1);
+  height: 88px;
+  background: rgba(103, 92, 148, 1);
+  color: #fff;
   position: absolute;
-  top: 24px;
-  left: 0px;
   font-family: NanumBarunGothic;
   font-weight: Regular;
   font-size: 20px;
@@ -111,7 +123,7 @@ body {
 .v40_333 {
   width: 670px;
   height: 123px;
-  background: url("../images/v40_333.png");
+  /* background: url("../images/v40_333.png"); */
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -121,7 +133,7 @@ body {
   left: 71px;
   overflow: hidden;
 }
-.v40_334 {
+#atd_number {
   width: 669px;
   height: 88px;
   background: rgba(255, 255, 255, 0.7300000190734863);
@@ -146,14 +158,14 @@ body {
 }
 .v40_336 {
   width: 829px;
-  background: url("../images/v40_336.png");
+  /* background: url("../images/v40_336.png"); */
   opacity: 1;
   position: absolute;
   top: 85px;
   left: 34px;
   border: 1px solid rgba(0, 0, 0, 1);
 }
-.v40_337 {
+#v40_337 {
   width: 829px;
   color: rgba(0, 0, 0, 1);
   position: absolute;
@@ -168,7 +180,7 @@ body {
 .v40_338 {
   width: 910px;
   height: 79px;
-  background: url("../images/v40_338.png");
+  /* background: url("../images/v40_338.png"); */
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -302,7 +314,7 @@ body {
 .v137_29 {
   width: 897px;
   height: 123px;
-  background: url("../images/v137_29.png");
+  /* background: url("../images/v137_29.png"); */
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -317,23 +329,13 @@ body {
   width: 897px;
   color: rgba(0, 0, 0, 1);
   position: absolute;
-  top: 41px;
+  top: 0px;
   left: 0px;
   font-family: Roboto;
   font-weight: Regular;
   font-size: 20px;
   opacity: 1;
   text-align: center;
-}
-
-.v137_31 {
-  width: 829px;
-  background: url("../images/v137_31.png");
-  opacity: 1;
-  position: absolute;
-  top: 85px;
-  left: 34px;
-  border: 1px solid rgba(0, 0, 0, 1);
 }
 
 .v137_32 {
@@ -489,6 +491,19 @@ body {
   font-size: 20px;
   opacity: 1;
   text-align: center;
+}
+
+.btn {
+  width: 100px;
+  height: 40px;
+  background: rgba(103, 92, 148, 1);
+  color: #fff;
+  opacity: 1;
+  position: absolute;
+  font-size: 15px;
+  top: 250px;
+  left: 750px;
+  border: 1px solid rgba(0, 0, 0, 1);
 }
 
 .v40_378 {
