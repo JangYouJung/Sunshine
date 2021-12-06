@@ -1,12 +1,10 @@
 var express = require("express");
-var app = express();
 var router = express.Router();
 var connection = require("../config/db");
 let bcrypt = require("bcrypt");
 
 router.get("/", (req, res) => {
   console.log("로그인페이지 작동");
-  console.log(req.session);
 
   if (req.session.uid) { //req.session.uid가 있으면 로그인 되어있다는 뜻
     res.write(
@@ -16,7 +14,6 @@ router.get("/", (req, res) => {
   } else {
     res.render("login");
   }
- 
 });
 
 router.post("/", function (req, res) { //login.ejs에서 post로 넘겨준 기능 구현
@@ -24,7 +21,7 @@ router.post("/", function (req, res) { //login.ejs에서 post로 넘겨준 기�
   var pw = req.body.password;
   var job = req.body.job;
 
-  console.log("post received: %s %s %s", id, pw, job);
+  //console.log("post received: %s %s %s", id, pw, job);
 
   if (job === "student") {
     connection.query(
@@ -48,8 +45,9 @@ router.post("/", function (req, res) { //login.ejs에서 post로 넘겨준 기�
                     throw err;
                   }
                   console.log("학생 로그인");
-                  console.log(req.session);
-                  res.render("student_main"); //로그인 성공시 학생 메인페이지로 이동
+
+                  res.redirect("/student_main");
+
                 });
               }
             });
@@ -82,8 +80,7 @@ router.post("/", function (req, res) { //login.ejs에서 post로 넘겨준 기�
                   throw err;
                 }
                 console.log("직원 로그인");
-                console.log(req.session);
-                res.render("staff_main");
+                res.redirect("staff_main");
               });
             }
           }

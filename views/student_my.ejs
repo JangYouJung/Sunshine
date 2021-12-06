@@ -43,8 +43,10 @@
 
         <div class="v114_104">
           <table class="type01">
-             <% for(var i=0; i < data1.length; i++){ %> 
-             
+
+
+            <% for(var i=0; i < data1.length; i++){ %>
+
             <tr>
               <td><%= i+1 %></td>
               <td><%= data1[i].course_date %></td>
@@ -54,8 +56,6 @@
             </tr>
           </table>
         </div>
-
-      
       </div>
 
       <div class="v112_74">
@@ -77,7 +77,11 @@
       <div class="v100_29">
         <span class="v100_30">sunshine 특강 출결 사이트</span>
         <a href="/student_main"><div class="v39_228"></div></a>
-        <form method="get" action="/logout">
+        <form
+          method="get"
+          action="/logout"
+          onsubmit="return confirm('정말로 로그아웃 하시겠습니까?');"
+        >
           <div class="logout">
             <input type="submit" value="로그아웃" />
           </div>

@@ -1,5 +1,4 @@
 var express = require("express");
-var app = express();
 var router = express.Router();
 var connection = require("../config/db"); //디비 사용위해 필요
 let bcrypt = require("bcrypt"); //비번 암호화위한 것
@@ -27,12 +26,13 @@ router.post("/", function (req, res) { // join.ejs에서 post로 요청한 기�
   var sql_insert = [join_id, join_name, join_pwd, join_email];
 
   var saltRounds = 10;
-  console.log(sql_insert);
 
   connection.query(
     "select student_id from student where student_id=?",
     [join_id],
+
     function (err, rows) { //학번이 이미있으면 실패
+
       if (rows.length) {
         console.log("회원가입 실패");
         res.write(
@@ -53,14 +53,12 @@ router.post("/", function (req, res) { // join.ejs에서 post로 요청한 기�
             } else { //비밀번호를 암호화해서 저장
               bcrypt.hash(sql_insert[2], saltRounds, (error, hash) => {
                 sql_insert[2] = hash;
-                console.log(sql_insert);
                 connection.query(
                   "insert into student(student_id, student_name, student_pwd, email) values(?,?,?,?)",
                   sql_insert,
                   function (err, rows) { //student테이블에 삽입해줌
                     if (err) throw err;
                     console.log("ok");
-                    console.log(sql_insert);
                     res.write("<script>alert('success')</script>");
                     res.write('<script>window.location="/login"</script>'); //성공 알림창의 확인버튼 누르면 로그인 페이지로 이동
                   }

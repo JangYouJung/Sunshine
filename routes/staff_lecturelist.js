@@ -5,6 +5,9 @@ var connection = require("../config/db"); //디비 사용위해 필요, connecti
 
 router.get("/", function (req, res) {
     if (req.session.uid) {
+
+       
+
       connection.query(
         "select * from staff where staff_id=?",
         [req.session.uid],
@@ -27,6 +30,7 @@ router.get("/", function (req, res) {
           res.render("staff_lecturelist", {context: context, list: list, length:course_list.length});
         });
       }}});
+
     } else {
           res.write(
             "<script type='text/javascript'>alert('Please log in');</script>"
