@@ -22,7 +22,7 @@ router.get("/", function (req, res) {
 					
 					//강의 정보 띄워주기
 					connection.query(
-						"SELECT date_format(course_date, '%Y-%m-%d') AS course_date, course_name, course_num FROM course WHERE course_id=?",
+						"SELECT date_format(course_date, '%Y-%m-%d') AS course_date, course_name, course_num FROM course WHERE course_id=?;",
 						[queryData.id],
 						function(err1, rows1){
 							if(err1){
@@ -86,8 +86,17 @@ router.get("/", function (req, res) {
 											
 									}
 									else{ //유효한 인증 번호가 없을 경우 빈화면 띄워주기 
-										var context2 = ["인증 번호를 생성하세요", "", "", "", queryData.id];
-										res.render("staff_attendance", {data: context, course: context1, att: context2 });
+										connection.query(
+											"SELECT max(degree) as max FROM attendance_info WHERE course_id=?",
+											[queryData.id],
+											function(err4,rows4){
+												if(err4) throw err4;
+												var degree = rows4[0].max + 1;
+												console.log("불러온 차시: "+degree);
+												var context2 = ["인증 번호를 생성하세요", ''.concat(degree, '차시'), "", "", queryData.id];
+												res.render("staff_attendance", {data: context, course: context1, att: context2 });
+											}
+										);
 									}
 								}
 							);
