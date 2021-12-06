@@ -1,7 +1,10 @@
 {
+
   "name": "web-app1",
   "version": "0.0.0",
   "description": "WebApp1",
+
+
   "main": "server.js",
   "author": "",
   "scripts": {
@@ -10,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.6",
     "dateformat": "^5.0.2",
@@ -24,7 +28,9 @@
     "nodemailer": "^6.7.1",
     "session-file-store": "^1.5.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/MinYeongPark/Sunshine.git"

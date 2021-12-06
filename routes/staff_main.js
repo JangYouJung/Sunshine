@@ -5,6 +5,7 @@ var connection = require("../config/db"); //디비 사용위해 필요, connecti
 
 router.get("/", function (req, res) {
   if (req.session.uid) {
+
     //req.session.uid가 있으면 로그인 되어있다는 뜻
     /*res.render("staff_main");
     여기에 render("staff_main", { data: context, data1: context1 }) 이런식으로 데이터 넘겨주는 쿼리 작성,
@@ -37,6 +38,7 @@ router.get("/", function (req, res) {
         }
       }
     );
+
   } else {
     res.write(
       "<script type='text/javascript'>alert('Please log in');</script>"

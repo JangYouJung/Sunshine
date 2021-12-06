@@ -1,15 +1,18 @@
 var express = require("express");
 var app = express();
 var router = express.Router();
+
 var connection = require("../config/db"); //디비 사용위해 필요, connection.query()식으로 사용
 
 var url = require("url"); //url의 queryString에서 강의id를 추출하기 위해 사용
+
 
 router.get("/", function (req, res) {
   var _url = req.url;
   var queryData = url.parse(_url, true).query;
 
   if (req.session.uid) {
+
     connection.query(
       "select * from staff where staff_id=?",
       [req.session.uid],
@@ -122,6 +125,9 @@ router.get("/", function (req, res) {
         }
       }
     );
+
+   
+
   } else {
     res.write(
       "<script type='text/javascript'>alert('Please log in');</script>"
