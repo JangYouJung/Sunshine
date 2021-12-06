@@ -37,7 +37,6 @@
               <thead>
                 <tr>
                   <th>학번</th>
-                  <th>학과</th>
                   <th>이름</th>
                 </tr>
               </thead>
@@ -48,116 +47,12 @@
                               </tr>
                             </tfoot> -->
               <tbody>
+                <% for(var i=0; i < list.length; i+=2 ) { %>
                 <tr>
-                  <td>20190110</td>
-                  <td>컴퓨터공학과</td>
-                  <td>이수정</td>
+                  <td><%= list[i] %></td>
+                  <td><%= list[i+1] %></td>
                 </tr>
-                <tr>
-                  <td>20190110</td>
-                  <td>컴퓨터공학과</td>
-                  <td>이수정</td>
-                </tr>
-                <tr>
-                  <td>20190110</td>
-                  <td>컴퓨터공학과</td>
-                  <td>이수정</td>
-                </tr>
-                <tr>
-                  <td>20190110</td>
-                  <td>컴퓨터공학과</td>
-                  <td>이수정</td>
-                </tr>
-                <tr>
-                  <td>20190110</td>
-                  <td>컴퓨터공학과</td>
-                  <td>이수정</td>
-                </tr>
-                <tr>
-                  <td>20190110</td>
-                  <td>컴퓨터공학과</td>
-                  <td>이수정</td>
-                </tr>
-                <tr>
-                  <td>20190110</td>
-                  <td>컴퓨터공학과</td>
-                  <td>이수정</td>
-                </tr>
-                <tr>
-                  <td>20190110</td>
-                  <td>컴퓨터공학과</td>
-                  <td>이수정</td>
-                </tr>
-                <tr>
-                  <td>20190110</td>
-                  <td>컴퓨터공학과</td>
-                  <td>이수정</td>
-                </tr>
-                <tr>
-                  <td>20190110</td>
-                  <td>컴퓨터공학과</td>
-                  <td>이수정</td>
-                </tr>
-                <tr>
-                  <td>20190110</td>
-                  <td>컴퓨터공학과</td>
-                  <td>이수정</td>
-                </tr>
-                <tr>
-                  <td>20190110</td>
-                  <td>컴퓨터공학과</td>
-                  <td>이수정</td>
-                </tr>
-                <tr>
-                  <td>20190110</td>
-                  <td>컴퓨터공학과</td>
-                  <td>이수정</td>
-                </tr>
-                <tr>
-                  <td>20190110</td>
-                  <td>컴퓨터공학과</td>
-                  <td>이수정</td>
-                </tr>
-                <tr>
-                  <td>20190110</td>
-                  <td>컴퓨터공학과</td>
-                  <td>이수정</td>
-                </tr>
-                <tr>
-                  <td>20190110</td>
-                  <td>컴퓨터공학과</td>
-                  <td>이수정</td>
-                </tr>
-                <tr>
-                  <td>20190110</td>
-                  <td>컴퓨터공학과</td>
-                  <td>이수정</td>
-                </tr>
-                <tr>
-                  <td>20190110</td>
-                  <td>컴퓨터공학과</td>
-                  <td>이수정</td>
-                </tr>
-                <tr>
-                  <td>20190110</td>
-                  <td>컴퓨터공학과</td>
-                  <td>이수정</td>
-                </tr>
-                <tr>
-                  <td>20190110</td>
-                  <td>컴퓨터공학과</td>
-                  <td>이수정</td>
-                </tr>
-                <tr>
-                  <td>20190110</td>
-                  <td>컴퓨터공학과</td>
-                  <td>이수정</td>
-                </tr>
-                <tr>
-                  <td>20190110</td>
-                  <td>컴퓨터공학과</td>
-                  <td>이수정</td>
-                </tr>
+                <% }; %>
               </tbody>
             </table>
             <!-- <div class="v52_352"></div>
@@ -191,7 +86,7 @@
           <div class="v40_434" onclick="location.href='/staff_lecturelist'">
             <div class="v40_426"></div>
             <span class="v40_427">인재개발팀</span>
-            <span class="v40_428">이성신(7016)</span>
+            <span class="v40_428"><%=context[1]%>(<%=context[0]%>)</span>
           </div>
         </div>
       </div>

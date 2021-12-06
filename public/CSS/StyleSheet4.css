@@ -400,6 +400,11 @@ body {
 .submit input {
   width: 138px;
   height: 146px;
+  
+}
+.v41_113 input {
+  width: 138px;
+  height: 146px;
   background: rgba(126, 126, 126, 1);
   opacity: 1;
   position: absolute;

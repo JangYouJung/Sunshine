@@ -32,31 +32,33 @@
         <div class="v40_411">
           <div class="v40_415">
             <!--특강 검색 칸-->
+            <% var top = 49; var tops = "";%>
+            <% for (var i = 0; i < length*4; i+=4 ) {
+                  tops="top:"+String(top)+"px" %>
             <div
               class="v40_445"
-              onclick="location.href='/staff_attendancelist'"
+              onclick="location.href='/staff_attendancelist?course='+<%= list[i+3] %>"
+              style=<%= tops %>
             >
-              <!--네모 1-->
               <table class="lecture_list">
-                <tbody>
+                <thead>
                   <tr>
-                    <td>2021-10-22</td>
-                    <td>IP & BIZ 특강_특허정보검색</td>
-                    <td>38 / 40</td>
+                    <th><%= list[i] %>(<%= list[i+1] %>)</th>
                   </tr>
-                </tbody>
+                </thead>
               </table>
               <!-- <span class="v40_455">38 / 40</span>
                         <span class="v40_448">IP & BIZ 특강_특허정보검색</span>
                         <span class="v40_452">2</span>
                         <span class="v40_453">2021 10-22</span> -->
             </div>
-            <div class="v40_446"></div>
-            <!--네모 2-->
-            <div
+            <%  top = top + 135; %>
+            <%  }; %>
+
+            <!-- <div
               class="v40_447"
               onclick="location.href='/staff_attendancelist'"
-            ></div>
+            ></div> -->
             <!--네모 3-->
           </div>
           <div class="v40_425">
@@ -72,7 +74,7 @@
             <div class="v40_434" onclick="location.href='/staff_lecturelist'">
               <div class="v40_426"></div>
               <span class="v40_427">인재개발팀</span>
-              <span class="v40_428">이성신(7016)</span>
+              <span class="v40_428"><%=context[1]%>(<%=context[0]%>)</span>
             </div>
           </div>
         </div>

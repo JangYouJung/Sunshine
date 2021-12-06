@@ -35,6 +35,7 @@ router.get("/", function (req, res) {
 			}
 		}
 	);
+
   } else {
     res.write(
       "<script type='text/javascript'>alert('Please log in');</script>"

@@ -18,12 +18,13 @@ var student_attendance_suc = require("./routes/student_attendance_suc");
 var student_attendance = require("./routes/student_attendance");
 var student_main = require("./routes/student_main");
 var student_my = require("./routes/student_my");
+var email = require("./email");
+var staff_att_start = require("./routes/staff_att_start");
 var staff_studentlist = require("./routes/staff_studentlist");
 var staff_att_start = require("./routes/staff_att_start");
 var user_session = require("./user.session");
 
 app.use(express.static(__dirname + "/public"));
-
 app.set("view engine", "ejs"); //'ejs'탬플릿을 엔진으로 한다.
 app.set("views", path.join(__dirname, "views")); //폴더, 폴더경로 지정
 app.engine("html", require("ejs").renderFile);
@@ -48,36 +49,24 @@ app.use( //세션 설정
 
 app.get("/", (req, res) => {
   console.log("메인페이지 작동");
-  console.log(req.session);
 
   if (req.session.isStudent == true) {
     if (req.session.isLogined == true) {
-      res.redirect("student_main", {
-        isLogined: req.session.isLogined,
-        isStudent: req.session.isStudent,
-        uid: req.session.uid,
-      });
+      res.redirect("/student_main");
     } else {
-      res.redirect("login", {
-        isLogined: false,
-      });
+      res.redirect("/login");
     }
   } else {
     if (req.session.isLogined == true) {
-      res.redirect("staff_main", {
-        isLogined: req.session.isLogined,
-        isStudent: req.session.isStudent,
-        uid: req.session.uid,
-      });
+      res.redirect("staff_main");
     } else {
-      res.redirect("login", {
-        isLogined: false,
-      });
+      res.redirect("login");
     }
   }
 });
 
-app.use("/", login);  
+
+app.use("/", login);
 app.use("/join", join);
 app.use("/login", login);  
 app.use("/logout", logout);
@@ -92,6 +81,9 @@ app.use("/student_attendance", student_attendance);
 app.use("/student_main", student_main); //ejs파일에서 <a href="/student_main">이런식으로 링크 설정해주면 라우터 모듈안의 student_main이 불러와짐->라우터 모듈안의 student_main은 ejs파일을 렌더링해줌
 app.use("/student_my", student_my);
 app.use("/staff_att_start", staff_att_start);
+
+email.surveyEmail(); //이메일 보내기 함수
+
 app.listen("80");
 
 module.exports = app;
