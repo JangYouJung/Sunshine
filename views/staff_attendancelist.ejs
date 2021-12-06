@@ -30,30 +30,36 @@
         <div class="v40_415">
           <!--오른쪽 하얀색 칸-->
           <div class="content">
-            <div class="v52_291">
+            <!-- <div class="v52_291">
               <span class="v52_302">37명</span>
               <div class="v52_303"></div>
               <span class="v52_304">2021-10-28-18:55</span>
               <div class="v52_305"></div>
               <span class="v52_306">2차시</span>
-            </div>
-            <div class="v52_307" onclick="location.href='/staff_studentlist'">
+            </div> -->
+            <% var top = 232; var tops = "";%>
+            <% for (var i=0; i<max; i++ ) {
+                tops="top:"+String(top)+"px" %>
+            <div class="v52_307" style=<%= tops %>
+                  onclick="location.href='/staff_studentlist?course='+<%=course%>+'&degree='+<%=i+1%>">
               <div class="v52_308"></div>
-              <span class="v52_309">37명</span>
+              <span class="v52_309"><%=list2[i*2+1]%>명</span>
               <div class="v52_310"></div>
-              <span class="v52_311">2021-10-28-17:05</span>
+              <span class="v52_311"><%=list2[i*2]%></span>
               <div class="v52_312"></div>
-              <span class="v52_313">1차시</span>
+              <span class="v52_313"><%=i+1%>차시</span>
             </div>
+            <% top+=75; %>
+            <%} %>
             <div class="v52_267">
               <div class="v52_268"></div>
-              <span class="v52_269">40명</span>
+              <span class="v52_269"><%=list[2]%>명</span>
               <div class="v52_270"></div>
-              <span class="v52_271">2차시</span>
+              <span class="v52_271"><%= max %>차시</span>
               <div class="v52_272"></div>
-              <span class="v52_273">2021-10-28-17:00 ~ 2021-10-28-19:00</span>
+              <span class="v52_273"><%= list[1] %></span>
               <div class="v52_274"></div>
-              <span class="v52_275">IP & BIZ 특강_특허정보검색</span>
+              <span class="v52_275"><%= list[0] %></span>
             </div>
           </div>
         </div>
@@ -71,7 +77,7 @@
           <div class="v40_434" onclick="location.href='/staff_lecturelist'">
             <div class="v40_426"></div>
             <span class="v40_427">인재개발팀</span>
-            <span class="v40_428">이성신(7016)</span>
+            <span class="v40_428"><%=context[1]%>(<%=context[0]%>)</span>
           </div>
         </div>
       </div>

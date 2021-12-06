@@ -91,6 +91,6 @@ app.use("/student_attendance", student_attendance);
 app.use("/student_main", student_main); //ejs파일에서 <a href="/student_main">이런식으로 링크 설정해주면 라우터 모듈안의 student_main이 불러와짐->라우터 모듈안의 student_main은 ejs파일을 렌더링해줌
 app.use("/student_my", student_my);
 
-app.listen("8080");
+app.listen("80");
 
 module.exports = app;
