@@ -82,6 +82,6 @@ app.use("/staff_att_start", staff_att_start);
 
 email.surveyEmail(); //이메일 보내기 함수
 
-app.listen("8080");
+app.listen("80");
 
 module.exports = app;
