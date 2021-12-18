@@ -42,7 +42,7 @@ router.get("/", function (req, res) {
 									
 									var valid = rows2[0].att_valid;
 
-									if(valid){//유효한 인증 번호가 있을 경우																
+									if(valid){//유효한 인증 번호가 있을 경우
 										connection.query( 
 											"SELECT course_id, date_format(attendance_date, '%Y년 %m월 %d일 ') AS att_date, degree, attendance_personnel AS atts, attendance_num AS att_num, date_format(attendance_time, '%H시 %i분 %s초') AS att_time FROM attendance_info WHERE course_id=? AND att_valid = 1 ",
 										[queryData.id],
@@ -51,10 +51,19 @@ router.get("/", function (req, res) {
 												throw err3;
 											}
 											if(rows3){//유효한 인증 번호 불러서 띄워주기
-												var context2 = [rows3[0].att_num, ''.concat(rows3[0].degree, '차시'), rows3[0].att_date, rows3[0].att_time, rows3[0].course_id ];
-												timer.start_timer();
-												res.render("staff_attendance", {data: context, course: context1, att: context2 });
+													//끝나는 시각 계산
+													var endHour = parseInt((rows3[0].att_time).substring(0,2));    
+													var endMin = parseInt((rows3[0].att_time).substring(4,6)) + 10;
+													var endSec = parseInt((rows3[0].att_time).substring(8,10));
+													if (endMin > 60) { //끝나는 시각이 새로운 시로 변경되는 경우
+														endMin = endMin - 60;
+														endHour = endHour + 1;
+													}
+													var endTime = endHour + "시 " + endMin + "분 " + endSec + "초";
 
+													var context2 = [rows3[0].att_num, ''.concat(rows3[0].degree, '차시'), rows3[0].att_date, rows3[0].att_time, rows3[0].course_id, endTime];
+
+													res.render("staff_attendance", {data: context, course: context1, att: context2 });
 											}
 										});
 											

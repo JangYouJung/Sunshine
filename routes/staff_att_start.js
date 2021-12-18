@@ -75,7 +75,7 @@ router.post("/", function (req, res) {
 								"INSERT INTO attendance_info(course_id, degree, attendance_num, attendance_date, attendance_time, att_valid) values(?,?,?,?,?,?); UPDATE course SET att_valid = 1 WHERE course_id = ? ",
 								[id, att_degree, attendance_num, attendance_date, attendance_time, att_valid, id ],		
 								function(err3, rows3){
-									if(err3) throw err3;							
+									if(err3) throw err3;
 									setTimeout(function(){ // [3] 10분 후, 출석 종료 
 										connection.query(
 											"UPDATE course SET att_valid = 0 WHERE course_id = ?; UPDATE attendance_info SET att_valid = 0 WHERE attendance_num = ?",
@@ -83,15 +83,15 @@ router.post("/", function (req, res) {
 											function(err4, rows4){
 												if(err4) throw err4;
 												console.log('10분 후 출석 종료');
-												res.write("<script type= 'text/javascript'>alert('attendance finish');</script>");
-												res.write("<script type='text/javascript'>location.href='staff_main'</script>");
 											}
-									);
-								},30000);
+										);
+									},60000); //현재는 1분동안 작동하도록 설정
 								
 								console.log("정보 삽입 성공");
-								res.write("<script>alert('Attendence Start')</script>");
-								res.write('<script>window.location="staff_main"</script>');
+								// res.write("<script>alert('Attendence Start')</script>");
+								// res.write('<script>window.location="staff_main"</script>');
+								res.redirect("/staff_attendance?id=" +req.body.course_id);
+								
 								}
 							);
 						}

@@ -368,7 +368,7 @@ body {
   line-height: 146px;
 }
 .v41_114 {
-  width: 469px;
+  width: 660px;
   height: 146px;
   background: rgba(255, 255, 255, 1);
   opacity: 1;
@@ -423,16 +423,16 @@ body {
 
 .v41_att_data {
 	width: 929px;
-   	height: 38px;
+   	height: 60px; /*원래 : 38*/
 	border-top: 1px solid rgba(0,0,0,1);
-  	top: 220px;
+  	top: 200px;/*원래 : 220*/
 	left:0px;
 	position: absolute;
 	padding: 5px;
 }
 
 .v41_202 {
-  height: 38px;
+  height: 60px; /*원래 : 38*/
   width: 30%;
   float: left;
   opacity: 1;
@@ -441,18 +441,39 @@ body {
   font-family: NanumSquare;
   font-size: 18px;
   text-align: center;
-  line-height: 38px;
+  line-height: 60px;
 }
 .v41_203 {
   width: 70%;
-  height: 38px;
+  height: 60px;
+  float: left;
+  opacity: 1;
+  position: relative;
+}
+.v41_203_1 {
+  width: 100%;
+  height: 50%;
   float: left;
   opacity: 1;
   position: relative;
   font-family: NanumSquare;
   font-size: 18px;
-  text-align: center;
-  line-height: 38px;
+  text-align: start;
+  line-height: 30px;
+  text-indent: 1em;
+
+}
+.v41_203_2 {
+  width: 100%;
+  height: 50%;
+  float: left;
+  opacity: 1;
+  position: relative;
+  font-family: NanumSquare;
+  font-size: 18px;
+  text-align: start;
+  line-height: 30px;
+  text-indent: 1em;
 }
 .v41_103 {
   width: 929px;
