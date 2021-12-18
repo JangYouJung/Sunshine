@@ -1048,6 +1048,18 @@ table.type01 th {
   background: rgba(197, 197, 197, 1);
   padding: 10px;
 }
+.type01_th1 {
+  width : 9%;
+}
+.type01_th2 {
+  width : 30%;
+}
+.type01_th3 {
+  width : 8%;
+}
+.type01_th4 {
+  width : 65%;
+}
 table.type01 td {
   border-bottom: 1px solid #444444;
   padding: 10px;

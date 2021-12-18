@@ -38,7 +38,15 @@ table.v41_821 {
   left: 0px;
   background-color: rgb(173, 173, 173);	
 }
-
+.v41_821_th1 {
+  width : 35%;
+}
+.v41_821_th2 {
+  width : 50.5%;
+}
+.v41_821_th3 {
+  width : 14.5%;
+}
 .v41_888 {
   position: absolute;
   width: 1010px;
