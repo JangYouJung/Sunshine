@@ -2,6 +2,7 @@
 
 * 2021년 2학기 데이터베이스프로그래밍 팀프로젝트 11팀(김다은, 박민영, 이나연, 장유정) 
 * 프로젝트 데모 영상 : https://youtu.be/Rs0VtGXXfao
+* 최종보고서 : https://drive.google.com/file/d/18Zwk-4mVHwkUvAuJAqudywJGZ1rB9KPH/view?usp=sharing
 
 Script폴더: 자바스크립트 코드(프론트앤드 관련)
 
