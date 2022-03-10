@@ -62,6 +62,7 @@
     <img src = "https://user-images.githubusercontent.com/55652102/157672819-7e131a3f-d0d9-4e8d-af2c-a44c40826a38.png" width="100%" height="100%">
     
     <br>
+    <br>
 
     > **학생 - 출석 인증**
 
@@ -70,6 +71,7 @@
     <img src = "https://user-images.githubusercontent.com/55652102/157673177-f37fb869-f28c-47c2-ba91-8a1463dc6148.png" width="100%" height="100%">
     
     <br>
+    <br>
 
     > **교직원 - 출석 관리**
 
@@ -77,6 +79,7 @@
 
     <img src = "https://user-images.githubusercontent.com/55652102/157673454-9e602a62-2ba9-46dc-b719-12999f6dc762.png" width="100%" height="100%">
     
+    <br>
     <br>
 
 
